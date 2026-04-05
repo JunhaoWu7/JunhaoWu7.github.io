@@ -42,5 +42,5 @@ hugoblox:
   search:
     enable: true
     # 营销与统计分析
-  a dmarketing:
+  marketing:
     google_analytics: "G-4QSM60EMWN"
