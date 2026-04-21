@@ -11,11 +11,11 @@ address:
   region: ""
   postcode: ""
   country: ""
-summary: Invited as an Outstanding Student Model to deliver a university-wide
+summary: Invited as an Outstanding Student Model(1/10) to deliver a university-wide
   live speech, sharing my journey of perseverance and serving as a role model to
   fellow students.
 abstract: |
-  Invited as an Outstanding Student Model, I delivered a university-wide live
+  Invited as an Outstanding Student Model(1/10), I delivered a university-wide live
   speech to share my academic journey, personal growth, and experiences in
   balancing study and leadership, aiming to encourage perseverance and inspire
   fellow students to pursue excellence.

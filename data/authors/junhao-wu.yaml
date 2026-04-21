@@ -7,13 +7,17 @@ name:
   pronunciation: "junhao wu"
   pronouns: "he/him"
   role: "Undergraduate CS Student"
-bio: "I am an **undergraduate CS student** at Dalian University of Technology. My research interests focus on **Vision-Language-Action (VLA)** and **robot manipulation**, with an emphasis on robustness and self-supervised learning under distribution shifts. I led work on improving zero-shot generalization for VLA models and contributed to Open-Vocabulary Pedestrian Attribute Recognition; both are currently under submission to **ICML 2026**. I also led the development of **MindCare**, a multimodal mental-health assessment system, and worked on robust multimodal forgery detection during an algorithm internship. I aim to develop reproducible, scalable methods that improve the reliability and generalization of VLA models in real-world settings.
-
-
+bio: I am an undergraduate student majoring in Computer Science at Dalian University of Technology.
+  My research interests focus on **Embodied AI** and **Vision-Language-Action (VLA) models**, with the core goal of improving the **robustness** and **zero-shot generalization of robots** in complex environments.<br><br>
+  Currently, I am deeply exploring the application of World Models in human sequence prediction, and striving to build an effective embodied data generation system to support downstream imitation learning and policy training.
+  In addition, I have research experience in open-vocabulary multi-label recognition and pedestrian attribute recognition, and am proficient in handling common visual tasks.
+  At present, two works I participated in have been submitted to **ICML 2026** and are under review.
+  I once worked as an **algorithm intern** at SDIC Intelligence Co., Ltd., where I participated in work related to multimodal deepfake detection.<br><br>
+  In the future, I hope to **develop reproducible and scalable methods** to continuously enhance the **reliability** and **generalization** of VLA models in real-world settings.
+  
+  <!-- spacer -->
   <!-- spacer -->
 
-
-  <!-- spacer -->\n"
 is_owner: true
 schema: "hugoblox/author/v1"
 links:
@@ -29,7 +33,7 @@ education:
     start: "Sep 2023"
     end: ""
     summary: "- During my studies, I have developed a solid and well-rounded profile across academics, student leadership, and innovation competitions:<br><br>
-      - **Academic Performance**: Major in **Computer Science and Technology** with a weighted GPA of <font color=#af0000>**93.15**</font> over the first five semesters, ranking <font color=#af0000>**2/154**</font> in my major. I am also pursuing a minor in **International Organizations and Global Governance**.<br><br>
+      - **Academic Performance**: Major in **Computer Science and Technology** with a weighted GPA of <font color=#af0000>**93.02**</font> over the first five semesters, ranking <font color=#af0000>**2/155**</font> in my major. I am also pursuing a minor in **International Organizations and Global Governance**.<br><br>
       - **Honors & Awards**: Recipient of the <font color=#af0000>**National Scholarship**</font> for **two consecutive years**; awarded <font color=#af0000>**Outstanding Student Model**</font> at Dalian University of Technology (**top 10 university-wide**).<br><br>
       - **Student Leadership**: Serving as **a member of the Student Union Presidium in the School of Computer Science**, with strong experience in organization, coordination, and team management.<br><br>
       - **English Proficiency**:   **CET-4: <font color=#af0000>618</font>**(Oral: Excellent), **CET-6: <font color=#af0000>585</font>** (Oral: Good).<br><br>
