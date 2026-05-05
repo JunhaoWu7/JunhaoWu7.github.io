@@ -9,10 +9,10 @@ name:
   role: "Undergraduate CS Student"
 bio: I am an undergraduate student majoring in Computer Science at Dalian University of Technology.
   My research interests focus on **Embodied AI** and **Vision-Language-Action (VLA) models**, with the core goal of improving the **robustness** and **zero-shot generalization of robots** in complex environments.<br><br>
-  Currently, I am deeply exploring the application of World Models in human sequence prediction, and striving to build an effective embodied data generation system to support downstream imitation learning and policy training.
-  In addition, I have research experience in open-vocabulary multi-label recognition and pedestrian attribute recognition, and am proficient in handling common visual tasks.
-  At present, two works I participated in have been submitted to **ICML 2026** and are under review.
-  I once worked as an **algorithm intern** at SDIC Intelligence Co., Ltd., where I participated in work related to multimodal deepfake detection.<br><br>
+  My recent research focuses on **enhancing model generalization**. I developed a self-supervised prompt learning framework to bolster **the visual robustness of VLA models** (submitted to **NeurIPS 2026**). 
+  Additionally, I proposed **MGTSM**, **a meta-learning framework** for Open-Vocabulary Pedestrian Attribute Recognition (OVPAR) that effectively bridges the gap between seen and unseen categories (under review at **IEEE TMM**).
+  I also held an **Algorithm Internship** at SDIC Intelligence, where I conducted research on multimodal deepfake detection and improved the system's ability to detect cross-modal inconsistencies in synthetic media.<br><br>
+  Currently, I am deeply exploring the application of **World Models** in human sequence prediction, and striving to build **an effective embodied data generation system** to support downstream imitation learning and policy training.<br><br>
   In the future, I hope to **develop reproducible and scalable methods** to continuously enhance the **reliability** and **generalization** of VLA models in real-world settings.
   
   <!-- spacer -->
@@ -27,6 +27,12 @@ links:
   - icon: "hero/at-symbol"
     url: "mailto:JunHaoWu7@outlook.com"
     label: "Email"
+  - icon: 🤗
+    url: "https://huggingface.co/Wjjjh"
+    label: "Huggingface"
+  - icon: "brands/orcid"
+    url: "https://orcid.org/0009-0007-7604-1203"
+    label: "ORCID"
 education:
   - degree: "CS Undergrad"
     institution: "Dalian University of Technology"
@@ -82,7 +88,7 @@ experience:
     org: "Wangxuan Institute of Computer Technology, Peking University"
     start: "Nov 2025"
     end: "Feb 2026"
-    summary: "Serving as a Research Intern at **OV3Lab**, under the supervision of **Professor Jiahuan Zhou**. We systematically analyzed the performance degradation of OpenVLA under **visual distribution shifts** and attributed it to environmental perturbations in visual representations. Based on this insight, we developed **a self-supervised training framework** for the vision encoder, introducing **a small number of learnable prompt tokens** optimized with **a redundancy-reduction objective**. Without requiring target-domain data or language model updates, the method effectively enhances visual invariance. Experiments on LIBERO-plus demonstrate consistent robustness improvements under **lighting, layout, and background shifts**, along with **strong zero-shot generalization capability**.
+    summary: "Serving as a Research Intern at **OV3Lab**, under the supervision of **Professor Jiahuan Zhou**. We systematically analyzed the performance degradation of OpenVLA under **visual distribution shifts** and attributed it to environmental perturbations in visual representations. Based on this insight, we developed **a self-supervised training framework** for the vision encoder, introducing **a small number of learnable prompt tokens** optimized with **a redundancy-reduction objective**. Without requiring target-domain data or language model updates, the method effectively enhances visual invariance. Experiments on LIBERO-plus and LIBERO-pro demonstrate consistent robustness improvements under **lighting, layout, and background shifts**, along with **strong zero-shot generalization capability**.
 
 
 
