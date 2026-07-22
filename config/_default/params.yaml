@@ -5,7 +5,7 @@ hugoblox:
     name: Junhao Wu
     type: person
     tagline: CS Undergrad (DUT)
-    description: I'm a junior CS student at Dalian University of Technology. I work on Vision-Language-Action (VLA) and robot manipulation, focusing on robustness and self-super
+    description: I'm a junior CS student at Dalian University of Technology. I work on Vision-Language-Action (VLA) and robot manipulation, focusing on robustness and self-supervised learning.
   theme:
     mode: system
     pack: default

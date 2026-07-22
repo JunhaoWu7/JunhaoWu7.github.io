@@ -1,6 +1,6 @@
 # Hi 👋, I'm Junhao Wu
 ### CS undergrad (DUT)
-- 📝 Personal Homepage https://wwwwwwjh.github.io/
+- 📝 Personal Homepage https://JunhaoWu7.github.io/
 - 📫 Reach me: 1035304652@mail.dlut.edu.cn
 - 🔭 Currently working on: **VLA & Robot Manipulation**  
 - 🧠 Research interests:
