@@ -2,6 +2,8 @@
 title: 'Home'
 date: 2023-10-24
 type: landing
+seo:
+  title: 'Junhao Wu'
 
 design:
   # Default section spacing
@@ -50,6 +52,9 @@ sections:
             <figure class="experience-card__media experience-card__media--contain">
               <img src="/images/experience/tsinghua-college-ai.png" alt="College of AI, Tsinghua University" loading="lazy">
             </figure>
+            <div class="experience-card__body">
+              <p>Under the supervision of <strong>Assistant Professor Yongchao Chen</strong>, I work on <strong class="experience-card__highlight">world-model-driven robot learning</strong> and <strong>embodied intelligence</strong>. My research interests include <strong>VLA, world action models, humanoid robot motion retargeting, and multimodal synthetic data generation</strong>. I am also responsible for the deployment, maintenance, and experimental operation of the lab’s <strong class="experience-card__highlight">dual-arm Franka platform</strong>. This work aims to combine the temporal prediction capability of world models with the semantic understanding of foundation models, improving robots’ <strong>action generation, policy generalization, and execution robustness</strong> in complex real-world environments.</p>
+            </div>
           </article>
 
           <article class="experience-card experience-card--apex">
@@ -63,6 +68,10 @@ sections:
             <figure class="experience-card__media experience-card__media--contain">
               <img src="/images/experience/apex-intelligence.jpg" alt="Apex Intelligence" loading="lazy">
             </figure>
+            <div class="experience-card__body">
+              <p>During my internship at <strong>Apex Intelligence</strong>, I worked on <strong class="experience-card__highlight">Auto Research agents</strong> and <strong>evaluation benchmarks</strong>. My work included <strong>Harness optimization</strong>, <strong>CoT analysis model development</strong>, and internal testing of <strong>Apex Research</strong>. I also contributed to several research and engineering deliverables, including <strong>CoRL and EMNLP submission support</strong> for Auto Research, <strong>Apex Research PR and technical report writing</strong>, and the construction, contribution, and full-scale testing of <strong><span class="experience-card__highlight">ASI</span> benchmark tasks</strong>. These evaluations covered multiple models, including Claude Opus 4.8, Claude Sonnet, and MiniMax.</p>
+              <p>Overall, my work focused on <strong>automated research</strong>, <strong>agent evaluation</strong>, and <strong>platform capability building</strong>, reflecting my long-term interest in advancing <strong class="experience-card__highlight">self-evolving models</strong> and the realization of <strong class="experience-card__highlight">ASI</strong>.</p>
+            </div>
           </article>
 
           <article class="experience-card experience-card--wict">
@@ -77,7 +86,7 @@ sections:
               <img src="/images/experience/wict.png" alt="Wangxuan Institute of Computer Technology, Peking University" loading="lazy">
             </figure>
             <div class="experience-card__body">
-              <p>Serving as a Research Intern at <strong>OV3Lab</strong>, under the supervision of <strong>Professor Jiahuan Zhou</strong>. We systematically analyzed the performance degradation of OpenVLA under <strong>visual distribution shifts</strong> and attributed it to environmental perturbations in visual representations. Based on this insight, we developed a <strong>self-supervised training framework</strong> for the vision encoder, introducing a <strong>small number of learnable prompt tokens</strong> optimized with a <strong>redundancy-reduction objective</strong>. Without requiring target-domain data or language model updates, the method effectively enhances visual invariance. Experiments on LIBERO-plus and LIBERO-pro demonstrate consistent robustness improvements under <strong>lighting, layout, and background shifts</strong>, along with <strong>strong zero-shot generalization capability</strong>.</p>
+              <p>Serving as a Research Intern at <strong>OV3Lab</strong>, under the supervision of <strong>Professor Jiahuan Zhou</strong>. We systematically analyzed the performance degradation of OpenVLA under <strong>visual distribution shifts</strong> and attributed it to environmental perturbations in visual representations. Based on this insight, we developed a <strong class="experience-card__highlight">self-supervised training framework</strong> for the vision encoder, introducing a <strong>small number of learnable prompt tokens</strong> optimized with a <strong>redundancy-reduction objective</strong>. Without requiring target-domain data or language model updates, the method effectively enhances visual invariance. Experiments on LIBERO-plus and LIBERO-pro demonstrate consistent robustness improvements under <strong>lighting, layout, and background shifts</strong>, along with <strong class="experience-card__highlight">strong zero-shot generalization capability</strong>.</p>
             </div>
           </article>
 
@@ -93,7 +102,8 @@ sections:
               <img src="/images/experience/meiya-pico.png" alt="SDIC Intelligence Xiamen Information Co., Ltd" loading="lazy">
             </figure>
             <div class="experience-card__body">
-              <p>Contributed to a <strong>multimodal deepfake detection system</strong> that fuses semantic, frequency-domain, and spatial-domain features for social platform content moderation and evidence extraction. Worked with <strong class="experience-card__metric">100K+ data samples</strong> across multiple modalities; incorporated CLIP-based semantic features, a frequency-branch module (Freq-Net), and a spatial-branch module (CameraPrint), and applied mutual-consistency constraints and contrastive learning to improve fusion. Achieved <strong class="experience-card__metric">0.97 AUC</strong> on the validation set and <strong class="experience-card__metric">93%+</strong> accuracy, delivering a <strong class="experience-card__metric">~8-percentage-point</strong> improvement over a baseline model.</p>
+              <p>During my internship at <strong>SDIC Intelligence</strong>, I worked on open-vocabulary pedestrian attribute recognition and multimodal content understanding. For OVPAR, our team developed three open-vocabulary benchmarks—<strong>OV-MSP60K, OV-RAP2, and OV-CelebPAR</strong>—to evaluate generalization from seen to unseen attributes. We also proposed <strong>MGTSM</strong>, a meta-learning framework that simulates distribution shifts to improve adaptation to unseen classes, achieving more balanced performance across ZSL and GZSL settings.</p>
+              <p>I also contributed to a <strong class="experience-card__highlight">multimodal deepfake detection system</strong> built around a multi-branch architecture that combines semantic, frequency-domain, and spatial-domain cues, using consistency constraints and contrastive learning to improve feature fusion. Evaluated on <strong>more than 100,000 samples</strong>, the model achieved <strong>0.97 AUC</strong> and <strong>over 93% accuracy</strong>.</p>
             </div>
           </article>
         </div>

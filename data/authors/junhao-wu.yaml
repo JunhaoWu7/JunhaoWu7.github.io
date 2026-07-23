@@ -12,7 +12,8 @@ bio: I am an undergraduate student majoring in Computer Science at Dalian Univer
   My recent research focuses on **enhancing model generalization**. I developed a self-supervised prompt learning framework to bolster **the visual robustness of VLA models** (submitted to **NeurIPS 2026**). 
   Additionally, I proposed **MGTSM**, **a meta-learning framework** for Open-Vocabulary Pedestrian Attribute Recognition (OVPAR) that effectively bridges the gap between seen and unseen categories (under review at **IEEE TMM**).
   I also held an **Algorithm Internship** at SDIC Intelligence, where I conducted research on multimodal deepfake detection and improved the system's ability to detect cross-modal inconsistencies in synthetic media.<br><br>
-  Currently, I am deeply exploring the application of **World Models** in human sequence prediction, and striving to build **an effective embodied data generation system** to support downstream imitation learning and policy training.<br><br>
+  Currently, as a **Research Intern at the College of AI, Tsinghua University**, I am exploring the application of **World Models** in human sequence prediction and building **an effective embodied data generation system** to support downstream imitation learning and policy training.
+  In parallel, as an **Algorithm Intern at Apex Intelligence**, I work on **Auto Research agents** and **evaluation benchmarks**, with a long-term interest in **self-evolving models** and **ASI**.<br><br>
   In the future, I hope to **develop reproducible and scalable methods** to continuously enhance the **reliability** and **generalization** of VLA models in real-world settings.
   
   <!-- spacer -->

@@ -11,6 +11,47 @@
 #section-resume-biography .avatar-wrapper {
   margin-top: -250px !important; /* 按你的实际高度微调 */
 }
+
+/* Homepage identity: echo the Academic title without overpowering the portrait. */
+#section-resume-biography h1.text-3xl {
+  position: relative;
+  width: fit-content;
+  margin: 1.6rem auto 0.8rem !important;
+  font-size: clamp(2.35rem, 4.2vw, 3.2rem) !important;
+  font-weight: 850;
+  letter-spacing: -0.055em;
+  line-height: 1;
+  text-shadow: 0 14px 34px rgb(0 143 163 / 0.14);
+}
+
+#section-resume-biography h1.text-3xl::after {
+  position: absolute;
+  right: 14%;
+  bottom: -0.3rem;
+  left: 14%;
+  height: 4px;
+  border-radius: 999px;
+  background: linear-gradient(90deg, transparent, #0082ff 20%, #00b6cc 55%, #00cba0 82%, transparent);
+  content: "";
+  opacity: 0.78;
+}
+
+#section-resume-biography .hb-ruby-name {
+  background: linear-gradient(110deg, #006fd6 5%, #008fa3 48%, #00b69f 95%);
+  background-clip: text;
+  color: transparent !important;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#section-resume-biography .hb-ruby-name rt {
+  display: none;
+}
+
+.dark #section-resume-biography .hb-ruby-name {
+  background-image: linear-gradient(110deg, #62b6ff 5%, #67e8f9 48%, #5eead4 95%);
+}
+
 /*biography*/
 
 /*下载按钮*/
@@ -152,6 +193,10 @@ section:has(.experience-grid) .max-w-prose {
   background: #151a2b;
 }
 
+.experience-card--apex {
+  order: -1;
+}
+
 .experience-card--apex .experience-card__media img {
   width: 100%;
   max-width: 100%;
@@ -207,7 +252,15 @@ section:has(.experience-grid) .max-w-prose {
   margin: 0;
 }
 
-.experience-card__metric {
+.experience-card__body p + p {
+  margin-top: 0.8rem;
+}
+
+.experience-card__body strong {
+  color: #111827;
+}
+
+.experience-card__body .experience-card__highlight {
   color: #b00000;
 }
 
@@ -228,6 +281,14 @@ section:has(.experience-grid) .max-w-prose {
 .dark .experience-card__header time,
 .dark .experience-card__body {
   color: rgb(203 213 225);
+}
+
+.dark .experience-card__body strong {
+  color: rgb(248 250 252);
+}
+
+.dark .experience-card__body .experience-card__highlight {
+  color: #fb7185;
 }
 
 .dark .experience-card__media {
