@@ -106,18 +106,18 @@ affiliations: []
 status:
   icon: "🔥"
 awards:
-    #2024、2025年国家奖学金
-  - title: "National Scholarship (2024, 2025)"
-    awarder: "The Central People's Government of the People's Republic of China"
-    date: "2024, 2025"
-    summary: ""
-    icon: "hero/trophy"
     #标兵
   - title: "Outstanding Student Model (Top 1/10)"
     awarder: "Dalian University of Technology"
     date: "Oct 2025"
     summary: ""
     icon: "hero/sparkles"
+    #2024、2025年国家奖学金
+  - title: "National Scholarship (2024, 2025)"
+    awarder: "The Central People's Government of the People's Republic of China"
+    date: "2024, 2025"
+    summary: ""
+    icon: "hero/trophy"
      #优秀三好学生
   - title: "Outstanding Merit Student (Top 1/10)"
     awarder: "Dalian University of Technology"
