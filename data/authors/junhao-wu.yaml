@@ -130,10 +130,10 @@ awards:
     date: "2024, 2025, 2026"
     summary: ""
     icon: "hero/trophy"
-    #2025年第九届华为ICT大赛 国家三等奖
-  - title: "Third Prize, Huawei ICT Competition"
-    awarder: "Huawei ICT, China"
-    date: "Mar 2025" 
+    # 中国机器人及人工智能大赛全国总决赛 国家一等奖
+  - title: "National First Prize, China Robot and Artificial Intelligence Competition"
+    awarder: "China Robot and Artificial Intelligence Competition, National Finals"
+    date: ""
     summary: ""
     icon: "hero/trophy"
     #2025年美国大学生数学建模大赛（MCM/ICM） M奖
@@ -142,15 +142,15 @@ awards:
     date: "May 2025"
     summary: ""
     icon: "hero/trophy"
-    #2025全国大学生数学建模竞赛省一等奖
-  - title: "First Prize, China Undergraduate Mathematical Contest in Modeling (CUMCM)"
-    awarder: "China Undergraduate Mathematical Contest in Modeling"
-    date: "2025"
+    # 全国大学生嵌入式芯片与系统设计竞赛 国家一等奖
+  - title: "National First Prize, National Undergraduate Embedded Chip and System Design Contest"
+    awarder: "National Undergraduate Embedded Chip and System Design Contest"
+    date: ""
     summary: ""
     icon: "hero/trophy"
-    #2024年21世纪中国日报社英语演讲比赛校二等奖
-  - title: "Second Prize, 21st Century Cup National English Speaking Competition"
-    awarder: "China Daily"
-    date: "Mar 2024"
+    # 中国大学生计算机设计大赛 国家二等奖
+  - title: "National Second Prize, Chinese Collegiate Computing Competition"
+    awarder: "Chinese Collegiate Computing Competition"
+    date: ""
     summary: ""
     icon: "hero/trophy"
