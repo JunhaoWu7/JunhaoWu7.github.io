@@ -45,6 +45,10 @@ node_modules/
 pagefind/
 static/pagefind/
 
+# Local Hugo/Go module caches used for development preview
+.hugo-cache/
+.go-mod-cache/
+
 # ============================================================================
 # Operating System
 # ============================================================================
@@ -67,3 +71,4 @@ Desktop.ini
 
 *.log
 npm-debug.log*
+.codex-temp/

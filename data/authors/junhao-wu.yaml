@@ -6,18 +6,30 @@ name:
   alternate: "吴俊豪"
   pronunciation: "junhao wu"
   pronouns: "he/him"
-  role: "Undergraduate CS Student"
-bio: I am an undergraduate student majoring in Computer Science at Dalian University of Technology.
-  My research interests focus on **Embodied AI** and **Vision-Language-Action (VLA) models**, with the core goal of improving the **robustness** and **zero-shot generalization of robots** in complex environments.<br><br>
-  My recent research focuses on **enhancing model generalization**. I developed a self-supervised prompt learning framework to bolster **the visual robustness of VLA models** (submitted to **NeurIPS 2026**). 
-  Additionally, I proposed **MGTSM**, **a meta-learning framework** for Open-Vocabulary Pedestrian Attribute Recognition (OVPAR) that effectively bridges the gap between seen and unseen categories (under review at **IEEE TMM**).
-  I also held an **Algorithm Internship** at SDIC Intelligence, where I conducted research on multimodal deepfake detection and improved the system's ability to detect cross-modal inconsistencies in synthetic media.<br><br>
-  Currently, as a **Research Intern at the College of AI, Tsinghua University**, I am exploring the application of **World Models** in human sequence prediction and building **an effective embodied data generation system** to support downstream imitation learning and policy training.
-  In parallel, as an **Algorithm Intern at Apex Intelligence**, I work on **Auto Research agents** and **evaluation benchmarks**, with a long-term interest in **self-evolving models** and **ASI**.<br><br>
-  In the future, I hope to **develop reproducible and scalable methods** to continuously enhance the **reliability** and **generalization** of VLA models in real-world settings.
-  
-  <!-- spacer -->
-  <!-- spacer -->
+  role: "Incoming PhD Student · Fall 2027"
+bio: |-
+  <div class="sidebar-profile-meta">
+    <div class="sidebar-education">
+      <div class="sidebar-education__item">
+        <strong>College of AI, Tsinghua University</strong>
+        <span>Incoming PhD · Fall 2027</span>
+      </div>
+      <div class="sidebar-education__item">
+        <strong>Apex Intelligence</strong>
+        <span>Algorithm Intern</span>
+      </div>
+      <div class="sidebar-education__item">
+        <strong>Dalian University of Technology</strong>
+        <span>Undergraduate · Computer Science</span>
+      </div>
+    </div>
+    <div class="sidebar-research-focus">
+      <span class="sidebar-research-focus__label">Research Interests</span>
+      <span class="sidebar-research-focus__item">Embodied Intelligence</span>
+      <span class="sidebar-research-focus__item">Robot Foundation Models</span>
+      <span class="sidebar-research-focus__item">VLA / WAM · Robust Generalization</span>
+    </div>
+  </div>
 
 is_owner: true
 schema: "hugoblox/author/v1"
@@ -34,17 +46,9 @@ links:
   - icon: "brands/orcid"
     url: "https://orcid.org/0009-0007-7604-1203"
     label: "ORCID"
-education:
-  - degree: "CS Undergrad"
-    institution: "Dalian University of Technology"
-    start: "Sep 2023"
-    end: ""
-    summary: "- During my studies, I have developed a solid and well-rounded profile across academics, student leadership, and innovation competitions:<br><br>
-      - **Academic Performance**: Major in **Computer Science and Technology** with a weighted GPA of <font color=#af0000>**93.02**</font> over the first five semesters, ranking <font color=#af0000>**2/155**</font> in my major. I am also pursuing a minor in **International Organizations and Global Governance**.<br><br>
-      - **Honors & Awards**: Recipient of the <font color=#af0000>**National Scholarship**</font> for **two consecutive years**; awarded <font color=#af0000>**Outstanding Student Model**</font> at Dalian University of Technology (**top 10 university-wide**).<br><br>
-      - **Student Leadership**: Serving as **a member of the Student Union Presidium in the School of Computer Science**, with strong experience in organization, coordination, and team management.<br><br>
-      - **English Proficiency**:   **CET-4: <font color=#af0000>618</font>**(Oral: Excellent), **CET-6: <font color=#af0000>585</font>** (Oral: Good).<br><br>
-      - **Innovation & Competitions**: Actively engaged in research and innovation competitions, earning <font color=#af0000>**4 national-level awards**</font> and <font color=#af0000>**40+ awards**</font> at various levels, with hands-on experience in project execution and delivering outcomes."
+  - icon: "brands/google-scholar"
+    url: "https://scholar.google.com/citations?user=pM4JejoAAAAJ&hl=zh-CN"
+    label: "Google Scholar"
 interests:
   - "VLA & Robot Manipulation"
 ids:
@@ -103,54 +107,58 @@ experience:
 
       ![MeiyaPico](MeiyaPico.png)\n"
 affiliations: []
-status:
-  icon: "🔥"
 awards:
-    #标兵
+    # 国家奖学金
+  - title: "National Scholarship (2024, 2025, 2026)"
+    awarder: ""
+    date: "2024, 2025, 2026"
+    summary: ""
+    icon: "hero/trophy"
+    # 标兵
   - title: "Outstanding Student Model (Top 1/10)"
-    awarder: "Dalian University of Technology"
+    awarder: ""
     date: "Oct 2025"
     summary: ""
     icon: "hero/sparkles"
-    #2024、2025年国家奖学金
-  - title: "National Scholarship (2024, 2025)"
-    awarder: "The Central People's Government of the People's Republic of China"
-    date: "2024, 2025"
-    summary: ""
-    icon: "hero/trophy"
-     #优秀三好学生
-  - title: "Outstanding Merit Student (Top 1/10)"
-    awarder: "Dalian University of Technology"
-    date: "2024, 2025"
+    # 共青团干部标兵
+  - title: "Outstanding Communist Youth League Cadre Model"
+    awarder: ""
+    date: "Apr 2026"
     summary: ""
     icon: "hero/check-badge"
-    # 2024、2025、2026年全国大学生英语竞赛（NECCS）国家三等奖
-  - title: "National Third Prize for Three Consecutive Years, National English Competition for College Students (NECCS)"
-    awarder: "National English Competition for College Students"
-    date: "2024, 2025, 2026"
+    # 全国大学生嵌入式芯片与系统设计竞赛 国家一等奖
+  - title: "National First Prize, National Undergraduate Embedded Chip and System Design Contest"
+    awarder: ""
+    date: "Present"
     summary: ""
     icon: "hero/trophy"
     # 中国机器人及人工智能大赛全国总决赛 国家一等奖
   - title: "National First Prize, China Robot and Artificial Intelligence Competition"
-    awarder: "China Robot and Artificial Intelligence Competition, National Finals"
-    date: ""
+    awarder: ""
+    date: "Present"
     summary: ""
     icon: "hero/trophy"
-    #2025年美国大学生数学建模大赛（MCM/ICM） M奖
+    # 2025年美国大学生数学建模大赛（MCM/ICM）M奖
   - title: "Meritorious Winner (M Award), Mathematical Contest in Modeling (MCM/ICM)"
-    awarder: "COMAP, USA"
+    awarder: ""
     date: "May 2025"
-    summary: ""
-    icon: "hero/trophy"
-    # 全国大学生嵌入式芯片与系统设计竞赛 国家一等奖
-  - title: "National First Prize, National Undergraduate Embedded Chip and System Design Contest"
-    awarder: "National Undergraduate Embedded Chip and System Design Contest"
-    date: ""
     summary: ""
     icon: "hero/trophy"
     # 中国大学生计算机设计大赛 国家二等奖
   - title: "National Second Prize, Chinese Collegiate Computing Competition"
-    awarder: "Chinese Collegiate Computing Competition"
-    date: ""
+    awarder: ""
+    date: "Present"
     summary: ""
     icon: "hero/trophy"
+    # 全国大学生英语竞赛国家三等奖
+  - title: "National Third Prize for Three Consecutive Years, National English Competition for College Students (NECCS)"
+    awarder: ""
+    date: "2024, 2025, 2026"
+    summary: ""
+    icon: "hero/trophy"
+    # 优秀三好学生
+  - title: "Outstanding Merit Student (Top 1/10)"
+    awarder: ""
+    date: "2024, 2025"
+    summary: ""
+    icon: "hero/check-badge"

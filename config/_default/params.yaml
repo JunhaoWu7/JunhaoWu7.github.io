@@ -10,8 +10,8 @@ hugoblox:
     mode: system
     pack: default
     colors:
-      primary: ""
-      secondary: ""
+      primary: "#6510AD"
+      secondary: "#8B4BC1"
       neutral: ""
   typography:
     font: sans

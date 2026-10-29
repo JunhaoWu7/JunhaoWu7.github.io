@@ -1,0 +1,35 @@
+{{ $item := .item }}
+{{ $image := $item.Resources.GetMatch "{featured,cover,thumbnail}*" }}
+<article class="academic-entry academic-entry--{{ $item.Slug }}{{ if not $image }} academic-entry--text-only{{ end }}">
+  {{ with $image }}
+    {{ $preview := . }}
+    {{ if ne .MediaType.SubType "svg" }}
+      {{ $preview = .Fit "960x720 webp" }}
+    {{ end }}
+    <a class="academic-entry__image" href="{{ $item.RelPermalink }}" aria-label="{{ $item.Title }}">
+      <img src="{{ $preview.RelPermalink }}" alt="{{ $item.Title }}" loading="lazy" decoding="async" width="{{ $preview.Width }}" height="{{ $preview.Height }}">
+    </a>
+  {{ end }}
+  <div class="academic-entry__body">
+    <time datetime="{{ $item.Date.Format "2006-01-02" }}">{{ $item.Date.Format "Jan 2006" }}</time>
+    <h3><a href="{{ $item.RelPermalink }}">{{ $item.Title }}</a></h3>
+    <p>{{ $item.Params.summary | markdownify }}</p>
+    <div class="academic-entry__links">
+      <a href="{{ $item.RelPermalink }}">
+        <svg class="academic-entry__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12h13m-6-6 6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <span>{{ if eq $item.Section "projects" }}View project{{ else }}Read more{{ end }}</span>
+      </a>
+      {{ range $item.Params.links }}
+        {{ $label := .name | default .type }}
+        <a href="{{ .url | safeURL }}">
+          {{ if eq $label "github" }}
+            <svg class="academic-entry__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 2.8a9.2 9.2 0 0 0-2.91 17.93c.46.08.63-.2.63-.44v-1.7c-2.57.56-3.11-1.09-3.11-1.09-.42-1.07-1.03-1.36-1.03-1.36-.84-.58.06-.57.06-.57.93.07 1.42.95 1.42.95.83 1.42 2.18 1.01 2.71.77.08-.6.32-1.01.59-1.24-2.05-.23-4.2-1.03-4.2-4.57 0-1.01.36-1.84.95-2.49-.1-.23-.41-1.18.09-2.46 0 0 .77-.25 2.52.95A8.72 8.72 0 0 1 12 8.18c.78 0 1.56.1 2.29.3 1.75-1.2 2.52-.95 2.52-.95.5 1.28.19 2.23.09 2.46.59.65.95 1.48.95 2.49 0 3.55-2.16 4.34-4.21 4.57.33.29.63.84.63 1.69v2.51c0 .24.17.52.64.43A9.2 9.2 0 0 0 12 2.8Z" fill="currentColor"/></svg>
+          {{ else }}
+            <svg class="academic-entry__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6.5 3.5h7l4 4v13h-11z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/><path d="M13.5 3.5v4h4M8.5 13h7M8.5 16h5" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          {{ end }}
+          <span>{{ if eq $label "github" }}GitHub{{ else }}{{ $label }}{{ end }}</span>
+        </a>
+      {{ end }}
+    </div>
+  </div>
+</article>

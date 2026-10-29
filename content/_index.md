@@ -18,7 +18,7 @@ sections:
       username: junhao-wu
       # Show a call-to-action button under your biography? (optional)
       button:
-        text: Download Resume
+        text: Download CV
         url: /uploads/JunHao_Wu.pdf
     design:
       banner:
@@ -32,93 +32,166 @@ sections:
       avatar:
         size: large # Options: small (150px), medium (200px, default), large (320px), xl (400px), xxl (500px)
         shape: circle # Options: circle (default), square, rounded
-  - block: languages
-    content:
-      title: Languages
-      username: junhao-wu
   - block: markdown
     content:
-      title: Experience
+      title: About Me
       text: |-
-        <div class="experience-grid">
-          <article class="experience-card experience-card--tsinghua">
-            <header class="experience-card__header">
+        <div class="academic-about">
+          <p>I am an incoming PhD student at the <strong>College of AI, Tsinghua University</strong>, starting in Fall 2027. My research focuses on <strong>embodied intelligence</strong> and <strong>general-purpose robot foundation models</strong>, particularly Vision-Language-Action (VLA) models, World-Action Models (WAM), and robot policy learning that integrates agent-based approaches with the capabilities of large models.</p>
+
+          <p>Currently, I am a Research Intern at Tsinghua, working on robot learning and real-world manipulation. My goal is to improve robot robustness, long-horizon decision-making, policy generalization, and zero-shot transfer in complex open-world environments. I deploy and evaluate models on a dual-arm <strong>Franka Research 3</strong> platform to validate their performance on real robots.</p>
+
+          <p>My earlier research explored VLA robustness under visual distribution shifts and open-vocabulary recognition. In parallel with my work at Tsinghua, I am an Algorithm Intern at <strong>Apex Intelligence</strong>, contributing to the development of autonomous scientific research agents, large-model training, and evaluation benchmarks.</p>
+        </div>
+  - block: markdown
+    content:
+      title: News
+      text: |-
+        <div class="academic-news" role="list">
+          <article class="academic-news__item" role="listitem">
+            <time datetime="2026-07">Jul 2026</time>
+            <p>Served on the Program Committee and as a reviewer, organizer, and session chair for the <a href="/academic/">FM4RoboPlan Workshop at RSS 2026</a>.</p>
+          </article>
+          <article class="academic-news__item" role="listitem">
+            <time datetime="2026-06">Jun 2026</time>
+            <p>Joined <strong>Apex Intelligence</strong> as an Algorithm Intern, working on Auto Research agents and evaluation benchmarks.</p>
+          </article>
+          <article class="academic-news__item" role="listitem">
+            <time datetime="2026-03">Mar 2026</time>
+            <p>Joined the <strong>College of AI, Tsinghua University</strong> as a Research Intern in embodied intelligence and robot learning.</p>
+          </article>
+          <article class="academic-news__item" role="listitem">
+            <time datetime="2025-11">Nov 2025</time>
+            <p>Joined <strong>OV<sup>3</sup>Lab at Peking University</strong> to study robust VLA models under visual distribution shifts.</p>
+          </article>
+        </div>
+  - block: markdown
+    content:
+      title: Selected Publications
+      text: |-
+        <div class="selected-publications">
+          <article class="publication-card publication-card--paper publication-card--libero">
+            <a class="publication-card__visual" href="https://arxiv.org/abs/2610.24587" target="_blank" rel="noopener">
+              <img src="/images/publications/libero-pro2-overview.png" alt="Overview of LIBERO-Pro2.0 static distribution shifts and runtime interventions" loading="lazy">
+            </a>
+            <div class="publication-card__content">
+              <div class="publication-card__meta">
+                <span class="publication-card__status">arXiv</span>
+                <span>Robotics · 2026</span>
+              </div>
+              <h3>LIBERO-Pro2.0: A Benchmark for Evaluating the Robustness of Embodied Foundation Models</h3>
+              <p class="publication-card__authors"><span>Xueyang Zhou,</span> <span>Yangming Xu,</span> <span>Qianjiang Li,</span> <span>Guiyao Tie,</span> <span><strong>Junhao Wu</strong>, et al.</span></p>
+              <p class="publication-card__summary">Evaluating robot foundation model robustness across 42 static and runtime perturbations.</p>
+              <div class="publication-card__links">
+                <a class="publication-card__link" href="https://arxiv.org/abs/2610.24587" target="_blank" rel="noopener">Paper <span aria-hidden="true">↗</span></a>
+                <a class="publication-card__link" href="https://racingemperor.github.io/LIBERO-Pro2.0/index.html" target="_blank" rel="noopener">Project <span aria-hidden="true">↗</span></a>
+                <a class="publication-card__link" href="https://github.com/LIBERO-Pro-Team/LIBERO-Pro2.0" target="_blank" rel="noopener">GitHub <span aria-hidden="true">↗</span></a>
+                <a class="publication-card__link" href="https://huggingface.co/datasets/zhouxueyang/LIBERO-Pro2.0-Eval" target="_blank" rel="noopener" aria-label="Huggingface evaluation dataset">Huggingface <span aria-hidden="true">↗</span></a>
+              </div>
+            </div>
+          </article>
+
+          <article class="publication-card publication-card--paper publication-card--asi">
+            <a class="publication-card__visual publication-figure--asi-overview" href="https://arxiv.org/abs/2608.17271" target="_blank" rel="noopener">
+              <span class="publication-figure__crop"><img src="/images/publications/asi-bench-overview.png" alt="Overview of ASI-Bench scientific domains and research tasks" loading="lazy"></span>
+            </a>
+            <div class="publication-card__content">
+              <div class="publication-card__meta">
+                <span class="publication-card__status">arXiv</span>
+                <span>AI for Science · 2026</span>
+              </div>
+              <h3>ASI-Bench: At the Dawn of Artificial Superintelligence</h3>
+              <p class="publication-card__authors"><span>Junwei Zhou,</span> <span>Zhen Sun,</span> <span>Binyu Li,</span> …, <span><strong>Junhao Wu</strong>, et al.</span></p>
+              <p class="publication-card__summary">Evaluating autonomous research across 60 scientific projects in 11 domains.</p>
+              <div class="publication-card__links">
+                <a class="publication-card__link" href="https://arxiv.org/abs/2608.17271" target="_blank" rel="noopener">Paper <span aria-hidden="true">↗</span></a>
+                <a class="publication-card__link" href="https://asibench.apexin.ai/" target="_blank" rel="noopener">Project <span aria-hidden="true">↗</span></a>
+                <a class="publication-card__link" href="https://github.com/apexin-ai/ASI-Bench" target="_blank" rel="noopener">GitHub <span aria-hidden="true">↗</span></a>
+                <a class="publication-card__link" href="https://huggingface.co/datasets/Apexintelligence-AI/ASI-Bench-seed42" target="_blank" rel="noopener" aria-label="Huggingface seed42 dataset">Huggingface <span aria-hidden="true">↗</span></a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+        <p class="selected-publications__more"><a href="/publications/">View all publications <span aria-hidden="true">→</span></a></p>
+    design:
+      css_class: publications-section
+  - block: markdown
+    content:
+      title: Research Experience
+      text: |-
+        <div id="research-experience" class="experience-grid research-gallery">
+          <article class="research-entry research-entry--tsinghua">
+            <figure class="research-entry__image">
+              <img src="/images/experience/tsinghua-college-ai.png" alt="College of AI, Tsinghua University" loading="lazy">
+            </figure>
+            <header class="research-entry__header">
               <div>
                 <h3>Research Intern</h3>
                 <p>College of AI, Tsinghua University</p>
               </div>
               <time datetime="2026-03">Mar 2026 – Present</time>
             </header>
-            <figure class="experience-card__media experience-card__media--contain">
-              <img src="/images/experience/tsinghua-college-ai.png" alt="College of AI, Tsinghua University" loading="lazy">
-            </figure>
-            <div class="experience-card__body">
-              <p>Under the supervision of <strong>Assistant Professor Yongchao Chen</strong>, I work on <strong class="experience-card__highlight">world-model-driven robot learning</strong> and <strong>embodied intelligence</strong>. My research interests include <strong>VLA, world action models, humanoid robot motion retargeting, and multimodal synthetic data generation</strong>. I am also responsible for the deployment, maintenance, and experimental operation of the lab’s <strong class="experience-card__highlight">dual-arm Franka platform</strong>. This work aims to combine the temporal prediction capability of world models with the semantic understanding of foundation models, improving robots’ <strong>action generation, policy generalization, and execution robustness</strong> in complex real-world environments.</p>
+            <div class="research-entry__summary">
+              <p>Researching <strong class="research-entry__emphasis">world-model-driven robot learning</strong> and embodied intelligence under <strong>Assistant Professor Yongchao Chen</strong>, with a focus on VLA and world-action models. Responsible for the <strong>dual-arm Franka Research 3 platform</strong>, including deployment, teleoperation, demonstration-data collection, model reproduction, and real-robot evaluation.</p>
             </div>
           </article>
 
-          <article class="experience-card experience-card--apex">
-            <header class="experience-card__header">
+          <article class="research-entry research-entry--apex">
+            <figure class="research-entry__image">
+              <img src="/images/experience/apex-intelligence.jpg" alt="Apex Intelligence" loading="lazy">
+            </figure>
+            <header class="research-entry__header">
               <div>
                 <h3>Algorithm Intern</h3>
                 <p>Apex Intelligence</p>
               </div>
               <time datetime="2026-06">Jun 2026 – Present</time>
             </header>
-            <figure class="experience-card__media experience-card__media--contain">
-              <img src="/images/experience/apex-intelligence.jpg" alt="Apex Intelligence" loading="lazy">
-            </figure>
-            <div class="experience-card__body">
-              <p>During my internship at <strong>Apex Intelligence</strong>, I worked on <strong class="experience-card__highlight">Auto Research agents</strong> and <strong>evaluation benchmarks</strong>. My work included <strong>Harness optimization</strong>, <strong>CoT analysis model development</strong>, and internal testing of <strong>Apex Research</strong>. I also contributed to several research and engineering deliverables, including <strong>CoRL and EMNLP submission support</strong> for Auto Research, <strong>Apex Research PR and technical report writing</strong>, and the construction, contribution, and full-scale testing of <strong><span class="experience-card__highlight">ASI</span> benchmark tasks</strong>. These evaluations covered multiple models, including Claude Opus 4.8, Claude Sonnet, and MiniMax.</p>
-              <p>Overall, my work focused on <strong>automated research</strong>, <strong>agent evaluation</strong>, and <strong>platform capability building</strong>, reflecting my long-term interest in advancing <strong class="experience-card__highlight">self-evolving models</strong> and the realization of <strong class="experience-card__highlight">ASI</strong>.</p>
+            <div class="research-entry__summary">
+              <p>Worked on <strong class="research-entry__emphasis">Auto Research agents</strong> and evaluation benchmarks, covering Harness optimization, CoT analysis, and internal evaluation of Apex Research. Contributed to <strong>ASI-Bench</strong> task construction and large-model testing, as well as research submissions, technical writing, and product communication.</p>
             </div>
           </article>
 
-          <article class="experience-card experience-card--wict">
-            <header class="experience-card__header">
+          <article class="research-entry research-entry--wict">
+            <figure class="research-entry__image">
+              <img src="/images/experience/wict.png" alt="Wangxuan Institute of Computer Technology, Peking University" loading="lazy">
+            </figure>
+            <header class="research-entry__header">
               <div>
                 <h3>Research Intern</h3>
                 <p>Wangxuan Institute of Computer Technology, Peking University</p>
               </div>
               <time datetime="2025-11/2026-02">Nov 2025 – Feb 2026</time>
             </header>
-            <figure class="experience-card__media experience-card__media--contain">
-              <img src="/images/experience/wict.png" alt="Wangxuan Institute of Computer Technology, Peking University" loading="lazy">
-            </figure>
-            <div class="experience-card__body">
-              <p>Serving as a Research Intern at <strong>OV3Lab</strong>, under the supervision of <strong>Professor Jiahuan Zhou</strong>. We systematically analyzed the performance degradation of OpenVLA under <strong>visual distribution shifts</strong> and attributed it to environmental perturbations in visual representations. Based on this insight, we developed a <strong class="experience-card__highlight">self-supervised training framework</strong> for the vision encoder, introducing a <strong>small number of learnable prompt tokens</strong> optimized with a <strong>redundancy-reduction objective</strong>. Without requiring target-domain data or language model updates, the method effectively enhances visual invariance. Experiments on LIBERO-plus and LIBERO-pro demonstrate consistent robustness improvements under <strong>lighting, layout, and background shifts</strong>, along with <strong class="experience-card__highlight">strong zero-shot generalization capability</strong>.</p>
+            <div class="research-entry__summary">
+              <p>Studied the robustness of VLA models under <strong>visual distribution shifts</strong> at <strong>OV³Lab</strong>, supervised by <strong>Professor Jiahuan Zhou</strong>. Developed a <strong class="research-entry__emphasis">self-supervised prompt-learning framework</strong> that improves robustness and zero-shot generalization under lighting, background, and layout changes.</p>
             </div>
           </article>
 
-          <article class="experience-card experience-card--meiya">
-            <header class="experience-card__header">
+          <article class="research-entry research-entry--meiya">
+            <figure class="research-entry__image">
+              <img src="/images/experience/meiya-pico.png" alt="SDIC Intelligence Xiamen Information Co., Ltd" loading="lazy">
+            </figure>
+            <header class="research-entry__header">
               <div>
                 <h3>Algorithm Intern</h3>
                 <p>SDIC Intelligence Xiamen Information Co., Ltd (AI Institute)</p>
               </div>
               <time datetime="2025-03/2025-08">Mar 2025 – Aug 2025</time>
             </header>
-            <figure class="experience-card__media experience-card__media--contain">
-              <img src="/images/experience/meiya-pico.png" alt="SDIC Intelligence Xiamen Information Co., Ltd" loading="lazy">
-            </figure>
-            <div class="experience-card__body">
-              <p>During my internship at <strong>SDIC Intelligence</strong>, I worked on open-vocabulary pedestrian attribute recognition and multimodal content understanding. For OVPAR, our team developed three open-vocabulary benchmarks—<strong>OV-MSP60K, OV-RAP2, and OV-CelebPAR</strong>—to evaluate generalization from seen to unseen attributes. We also proposed <strong>MGTSM</strong>, a meta-learning framework that simulates distribution shifts to improve adaptation to unseen classes, achieving more balanced performance across ZSL and GZSL settings.</p>
-              <p>I also contributed to a <strong class="experience-card__highlight">multimodal deepfake detection system</strong> built around a multi-branch architecture that combines semantic, frequency-domain, and spatial-domain cues, using consistency constraints and contrastive learning to improve feature fusion. Evaluated on <strong>more than 100,000 samples</strong>, the model achieved <strong>0.97 AUC</strong> and <strong>over 93% accuracy</strong>.</p>
+            <div class="research-entry__summary">
+              <p>Worked on open-vocabulary pedestrian attribute recognition, contributing to the <strong>OV-MSP60K, OV-RAP2, and OV-CelebPAR</strong> benchmarks and the <strong>MGTSM</strong> framework. Also developed a multimodal deepfake-detection system evaluated on <strong>100,000+ samples</strong>, achieving <strong>0.97 AUC</strong> and <strong>93%+ accuracy</strong>.</p>
             </div>
           </article>
         </div>
-  - block: experience
-    content:
-      username: junhao-wu
-    design:
-      # Hugo date format
-      date_format: 'January 2026'
-      # Education or Experience section first?
-      is_education_first: false
-  - block: portfolio
+  - block: collection
+    id: academic-projects
     content:
       title: Projects
       subtitle: ""
+      page_type: projects
       count: 3
       filters:
         tags: []
@@ -127,16 +200,21 @@ sections:
       sort_by: Weight
       sort_ascending: true
     design:
-      view: card
-      columns: 3
+      view: academic-row
+      css_class: academic-list-section
+      columns: 1
       full_width: true
 
   - block: collection
+    id: academic-events
     content:
       title: Events
       subtitle: ""
       # 告诉它读取哪类内容
       page_type: events
+      archive:
+        text: View all events
+        link: /events/
       # 显示数量
       count: 3
       # 过滤
@@ -145,15 +223,12 @@ sections:
         categories: []
         featured_only: false
     design:
-      view: card
-      columns: 2
+      view: academic-row
+      css_class: academic-list-section
+      columns: 1
       full_width: true
   - block: awards
     content:
       title: Awards
-      username: junhao-wu
-  - block: skills
-    content:
-      title: Skills & Hobbies
       username: junhao-wu
 ---

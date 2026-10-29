@@ -1,5 +1,5 @@
 ---
-title: Academic
+title: Academic Activities
 date: 2026-07-22
 type: landing
 

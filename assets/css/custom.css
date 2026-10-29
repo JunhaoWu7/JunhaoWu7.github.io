@@ -21,7 +21,7 @@
   font-weight: 850;
   letter-spacing: -0.055em;
   line-height: 1;
-  text-shadow: 0 14px 34px rgb(0 143 163 / 0.14);
+  text-shadow: 0 14px 34px rgb(116 49 184 / 0.14);
 }
 
 #section-resume-biography h1.text-3xl::after {
@@ -31,13 +31,13 @@
   left: 14%;
   height: 4px;
   border-radius: 999px;
-  background: linear-gradient(90deg, transparent, #0082ff 20%, #00b6cc 55%, #00cba0 82%, transparent);
+  background: linear-gradient(90deg, transparent, #6510ad 20%, #8b4bc1 55%, #a775d0 82%, transparent);
   content: "";
   opacity: 0.78;
 }
 
 #section-resume-biography .hb-ruby-name {
-  background: linear-gradient(110deg, #006fd6 5%, #008fa3 48%, #00b69f 95%);
+  background: linear-gradient(110deg, #6510ad 5%, #7431b8 48%, #9559cc 95%);
   background-clip: text;
   color: transparent !important;
   -webkit-background-clip: text;
@@ -49,7 +49,7 @@
 }
 
 .dark #section-resume-biography .hb-ruby-name {
-  background-image: linear-gradient(110deg, #62b6ff 5%, #67e8f9 48%, #5eead4 95%);
+  background-image: linear-gradient(110deg, #c9aaed 5%, #d7bdf0 48%, #dfc9f2 95%);
 }
 
 /*biography*/
@@ -69,6 +69,11 @@ a[href="/uploads/JunHao_Wu.pdf"]{
   justify-content: center !important;
   gap: 0.65rem !important;     /* 用 gap 代替 me-2.5 的视觉偏差 */
   line-height: 1 !important;
+}
+
+/* Temporarily keep the CV asset available while hiding its homepage CTA. */
+#section-resume-biography a[href="/uploads/JunHao_Wu.pdf"] {
+  display: none !important;
 }
 
 /* 取消 svg 自带的 margin（避免一边大一边小导致看起来偏） */
@@ -102,14 +107,14 @@ section:has(.experience-grid) .max-w-prose {
   overflow: hidden;
   border: 1px solid rgb(203 213 225 / 0.8);
   border-radius: 1.25rem;
-  background: linear-gradient(145deg, rgb(255 255 255 / 0.98), rgb(240 249 250 / 0.68));
+  background: linear-gradient(145deg, rgb(255 255 255 / 0.98), rgb(249 247 251 / 0.68));
   box-shadow: 0 14px 38px rgb(15 23 42 / 0.07);
   transition: transform 180ms ease, border-color 180ms ease, box-shadow 180ms ease;
 }
 
 .experience-card:hover {
-  border-color: rgb(0 182 204 / 0.48);
-  box-shadow: 0 18px 44px rgb(0 130 255 / 0.11);
+  border-color: rgb(139 75 193 / 0.48);
+  box-shadow: 0 18px 44px rgb(101 16 173 / 0.11);
   transform: translateY(-4px);
 }
 
@@ -130,7 +135,7 @@ section:has(.experience-grid) .max-w-prose {
 
 .experience-card__header p {
   margin: 0.55rem 0 0;
-  color: #5546ff;
+  color: #7431b8;
   font-size: 1.05rem;
   font-weight: 550;
   line-height: 1.45;
@@ -266,7 +271,7 @@ section:has(.experience-grid) .max-w-prose {
 
 .dark .experience-card {
   border-color: rgb(71 85 105 / 0.72);
-  background: linear-gradient(145deg, rgb(15 23 42 / 0.96), rgb(8 47 54 / 0.68));
+  background: linear-gradient(145deg, rgb(15 23 42 / 0.96), rgb(36 24 48 / 0.68));
   box-shadow: 0 14px 38px rgb(0 0 0 / 0.22);
 }
 
@@ -275,7 +280,7 @@ section:has(.experience-grid) .max-w-prose {
 }
 
 .dark .experience-card__header p {
-  color: rgb(129 140 248);
+  color: rgb(201 170 237);
 }
 
 .dark .experience-card__header time,
@@ -296,7 +301,7 @@ section:has(.experience-grid) .max-w-prose {
   background: linear-gradient(135deg, rgb(30 41 59), rgb(15 23 42));
 }
 
-/* The custom grid replaces only the work timeline; keep Education below it. */
+/* The custom grid replaces the work timeline with the editorial research layout. */
 #section-resume-experience > .mx-auto > .flex > .w-full:first-child {
   display: none !important;
 }
@@ -368,7 +373,7 @@ section#section-resume-experience p + figure {
   overflow: hidden;
   border: 1px solid rgb(203 213 225 / 0.8) !important;
   border-radius: 1.15rem !important;
-  background: linear-gradient(135deg, rgb(255 255 255 / 0.98), rgb(240 249 250 / 0.72)) !important;
+  background: linear-gradient(135deg, rgb(255 255 255 / 0.98), rgb(249 247 251 / 0.72)) !important;
   box-shadow: 0 10px 30px rgb(15 23 42 / 0.06) !important;
   transition: transform 180ms ease, border-color 180ms ease, box-shadow 180ms ease;
 }
@@ -380,13 +385,13 @@ section#section-resume-experience p + figure {
   left: 0;
   width: 5px;
   border-radius: 0 999px 999px 0;
-  background: linear-gradient(180deg, #0082ff, #00b6cc, #00cba0);
+  background: linear-gradient(180deg, #6510ad, #8b4bc1, #a775d0);
   content: "";
 }
 
 #section-resume-awards .flex.flex-col.gap-6 > .w-full:hover {
-  border-color: rgb(0 182 204 / 0.48) !important;
-  box-shadow: 0 18px 42px rgb(0 130 255 / 0.11) !important;
+  border-color: rgb(139 75 193 / 0.48) !important;
+  box-shadow: 0 18px 42px rgb(101 16 173 / 0.11) !important;
   transform: translateY(-4px);
 }
 
@@ -419,7 +424,7 @@ section#section-resume-experience p + figure {
   height: 2.5rem !important;
   flex: 0 0 2.5rem;
   border-radius: 999px;
-  background: linear-gradient(135deg, rgb(0 130 255 / 0.12), rgb(0 203 160 / 0.13));
+  background: linear-gradient(135deg, rgb(101 16 173 / 0.12), rgb(167 117 208 / 0.13));
 }
 
 #section-resume-awards h5 svg {
@@ -436,7 +441,7 @@ section#section-resume-experience p + figure {
 
 .dark #section-resume-awards .flex.flex-col.gap-6 > .w-full {
   border-color: rgb(71 85 105 / 0.72) !important;
-  background: linear-gradient(135deg, rgb(15 23 42 / 0.96), rgb(8 47 54 / 0.7)) !important;
+  background: linear-gradient(135deg, rgb(15 23 42 / 0.96), rgb(36 24 48 / 0.7)) !important;
   box-shadow: 0 12px 34px rgb(0 0 0 / 0.2) !important;
 }
 
@@ -460,22 +465,2057 @@ section#section-resume-experience p + figure {
 }
 
 
+/* Academic news */
+section:has(.academic-news) .max-w-prose {
+  width: min(1050px, calc(100vw - 3rem));
+  max-width: none !important;
+}
+
+section:has(.academic-news) > .flex > .mb-6 {
+  margin-bottom: 1.6rem;
+  font-size: clamp(2rem, 3.5vw, 2.75rem) !important;
+  letter-spacing: -0.035em;
+}
+
+.academic-news {
+  position: relative;
+  display: grid;
+  gap: 0;
+  overflow: hidden;
+  border: 1px solid rgb(203 213 225 / 0.78);
+  border-radius: 1.2rem;
+  background:
+    linear-gradient(135deg, rgb(255 255 255 / 0.96), rgb(249 247 251 / 0.74));
+  box-shadow: 0 14px 40px rgb(15 23 42 / 0.055);
+}
+
+.academic-news::before {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 5px;
+  background: linear-gradient(180deg, #6510ad, #8b4bc1 52%, #a775d0);
+  content: "";
+}
+
+.academic-news__item {
+  display: grid;
+  grid-template-columns: 7rem minmax(0, 1fr);
+  gap: 1.5rem;
+  align-items: baseline;
+  padding: 1rem 1.5rem 1rem 1.8rem;
+}
+
+.academic-news__item + .academic-news__item {
+  border-top: 1px solid rgb(226 232 240 / 0.9);
+}
+
+.academic-news__item time {
+  color: #6510ad;
+  font-size: 0.82rem;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.academic-news__item p {
+  margin: 0 !important;
+  color: rgb(51 65 85);
+  font-size: 0.96rem;
+  line-height: 1.65;
+}
+
+.academic-news__item a {
+  color: #6510ad;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.academic-news__item a:hover {
+  text-decoration: underline;
+  text-underline-offset: 0.2rem;
+}
+
+.dark .academic-news {
+  border-color: rgb(71 85 105 / 0.72);
+  background: linear-gradient(135deg, rgb(15 23 42 / 0.96), rgb(36 24 48 / 0.72));
+  box-shadow: 0 16px 42px rgb(0 0 0 / 0.2);
+}
+
+.dark .academic-news__item + .academic-news__item {
+  border-color: rgb(51 65 85);
+}
+
+.dark .academic-news__item p {
+  color: rgb(203 213 225);
+}
+
+.dark .academic-news__item time,
+.dark .academic-news__item a {
+  color: rgb(215 189 240);
+}
+
+@media (max-width: 640px) {
+  section:has(.academic-news) .max-w-prose {
+    width: min(100% - 2rem, 680px);
+  }
+
+  .academic-news__item {
+    grid-template-columns: 1fr;
+    gap: 0.3rem;
+    padding: 1rem 1.25rem 1rem 1.55rem;
+  }
+}
+
+/* Publications */
+section:has(.selected-publications) .max-w-prose,
+section:has(.publications-list) .max-w-prose {
+  width: min(1180px, calc(100vw - 3rem));
+  max-width: none !important;
+}
+
+section:has(.selected-publications) > .flex > .mb-6,
+section:has(.publications-list) > .flex > .mb-6 {
+  margin-bottom: 2rem;
+  font-size: clamp(2.25rem, 4vw, 3.25rem) !important;
+  letter-spacing: -0.035em;
+}
+
+.selected-publications,
+.publications-list {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.publication-card {
+  display: grid;
+  grid-template-columns: minmax(250px, 0.78fr) minmax(0, 1.55fr);
+  min-height: 270px;
+  overflow: hidden;
+  border: 1px solid rgb(203 213 225 / 0.82);
+  border-radius: 1.35rem;
+  background: rgb(255 255 255 / 0.92);
+  box-shadow: 0 16px 46px rgb(15 23 42 / 0.07);
+  transition: transform 180ms ease, border-color 180ms ease, box-shadow 180ms ease;
+}
+
+.publication-card:hover {
+  border-color: rgb(139 75 193 / 0.5);
+  box-shadow: 0 22px 56px rgb(101 16 173 / 0.12);
+  transform: translateY(-4px);
+}
+
+.publication-card__visual,
+.publication-detail__visual {
+  position: relative;
+  display: flex;
+  min-height: 250px;
+  padding: 1.65rem;
+  overflow: hidden;
+  color: white;
+  isolation: isolate;
+}
+
+.publication-card__visual::before,
+.publication-detail__visual::before {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background-image:
+    linear-gradient(rgb(255 255 255 / 0.08) 1px, transparent 1px),
+    linear-gradient(90deg, rgb(255 255 255 / 0.08) 1px, transparent 1px);
+  background-size: 28px 28px;
+  content: "";
+  mask-image: linear-gradient(135deg, black, transparent 78%);
+}
+
+.publication-card__visual::after,
+.publication-detail__visual::after {
+  position: absolute;
+  right: -4.5rem;
+  bottom: -5rem;
+  z-index: -1;
+  width: 15rem;
+  height: 15rem;
+  border: 1px solid rgb(255 255 255 / 0.32);
+  border-radius: 50%;
+  box-shadow: 0 0 0 2.4rem rgb(255 255 255 / 0.05), 0 0 0 4.8rem rgb(255 255 255 / 0.04);
+  content: "";
+}
+
+.publication-card--vla .publication-card__visual,
+.publication-detail__visual--vla {
+  background: linear-gradient(145deg, #3e145d 0%, #7934b6 58%, #8b4bc1 100%);
+}
+
+.publication-card--ovpar .publication-card__visual,
+.publication-detail__visual--ovpar {
+  background: linear-gradient(145deg, #30215e 0%, #76509b 52%, #d26476 100%);
+}
+
+.publication-card__index {
+  color: rgb(255 255 255 / 0.52);
+  font-size: 1rem;
+  font-weight: 750;
+  letter-spacing: 0.14em;
+}
+
+.publication-card__visual-copy,
+.publication-detail__visual {
+  justify-content: flex-end;
+  flex-direction: column;
+}
+
+.publication-card__visual-copy span,
+.publication-detail__visual > span {
+  margin-bottom: 0.35rem;
+  font-size: 0.75rem;
+  font-weight: 800;
+  letter-spacing: 0.19em;
+  text-transform: uppercase;
+}
+
+.publication-card__visual-copy strong,
+.publication-detail__visual > strong {
+  color: white;
+  font-size: clamp(2rem, 3.4vw, 3.15rem);
+  font-weight: 820;
+  letter-spacing: -0.055em;
+  line-height: 0.95;
+}
+
+.publication-card__visual-copy small,
+.publication-detail__visual > small {
+  margin-top: 0.85rem;
+  color: rgb(255 255 255 / 0.78);
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+}
+
+.publication-card__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2rem 2.25rem;
+}
+
+.publication-card__meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.7rem;
+  align-items: center;
+  margin-bottom: 0.85rem;
+  color: rgb(100 116 139);
+  font-size: 0.78rem;
+  font-weight: 750;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.publication-card__status {
+  padding: 0.3rem 0.65rem;
+  border: 1px solid rgb(116 49 184 / 0.25);
+  border-radius: 999px;
+  background: rgb(139 75 193 / 0.08);
+  color: #6510ad;
+}
+
+.publication-card h3,
+.publication-detail h2 {
+  margin: 0;
+  color: rgb(15 23 42);
+  font-size: clamp(1.35rem, 2.2vw, 1.8rem);
+  font-weight: 760;
+  letter-spacing: -0.025em;
+  line-height: 1.25;
+}
+
+.publication-card__authors {
+  margin: 0.75rem 0 0 !important;
+  color: rgb(71 85 105);
+  font-size: 0.92rem;
+}
+
+.publication-card__authors strong {
+  color: #6510ad;
+}
+
+.publication-card__summary {
+  margin: 0.8rem 0 0 !important;
+  color: rgb(71 85 105);
+  line-height: 1.65;
+}
+
+.publication-card__link {
+  width: fit-content;
+  margin-top: 1rem;
+  color: #6510ad;
+  font-weight: 750;
+  text-decoration: none;
+}
+
+.publication-card__link:hover,
+.selected-publications__more a:hover {
+  color: #4b0c77;
+  text-decoration: underline;
+  text-underline-offset: 0.25rem;
+}
+
+.selected-publications__more {
+  margin: 1.5rem 0 0 !important;
+  text-align: center;
+}
+
+.selected-publications__more a {
+  color: #6510ad;
+  font-weight: 750;
+  text-decoration: none;
+}
+
+.publications-intro {
+  max-width: 720px;
+  margin: -0.75rem auto 2.5rem !important;
+  color: rgb(71 85 105);
+  font-size: 1.12rem;
+  line-height: 1.7;
+  text-align: center;
+}
+
+.publication-detail {
+  display: grid;
+  grid-template-columns: minmax(260px, 0.8fr) minmax(0, 1.55fr);
+  gap: 0;
+  overflow: hidden;
+  scroll-margin-top: 7rem;
+  border: 1px solid rgb(203 213 225 / 0.82);
+  border-radius: 1.35rem;
+  background: rgb(255 255 255 / 0.94);
+  box-shadow: 0 16px 46px rgb(15 23 42 / 0.07);
+}
+
+.publication-detail__content {
+  padding: 2.4rem 2.6rem;
+}
+
+.publication-detail__content > p:not(.publication-card__authors, .publication-detail__notice) {
+  margin: 1.1rem 0 0;
+  color: rgb(71 85 105);
+  line-height: 1.75;
+}
+
+.publication-detail__notice {
+  margin: 1.15rem 0 0 !important;
+  padding-top: 1rem;
+  border-top: 1px solid rgb(226 232 240);
+  color: rgb(100 116 139);
+  font-size: 0.82rem;
+}
+
+.dark .publication-card,
+.dark .publication-detail {
+  border-color: rgb(71 85 105 / 0.72);
+  background: rgb(15 23 42 / 0.94);
+  box-shadow: 0 18px 50px rgb(0 0 0 / 0.22);
+}
+
+.dark .publication-card h3,
+.dark .publication-detail h2 {
+  color: rgb(248 250 252);
+}
+
+.dark .publication-card__authors,
+.dark .publication-card__summary,
+.dark .publication-detail__content > p:not(.publication-card__authors, .publication-detail__notice),
+.dark .publications-intro {
+  color: rgb(203 213 225);
+}
+
+.dark .publication-card__authors strong,
+.dark .publication-card__link,
+.dark .selected-publications__more a {
+  color: rgb(215 189 240);
+}
+
+.dark .publication-card__status {
+  border-color: rgb(215 189 240 / 0.25);
+  background: rgb(215 189 240 / 0.08);
+  color: rgb(215 189 240);
+}
+
+.dark .publication-detail__notice {
+  border-color: rgb(51 65 85);
+  color: rgb(148 163 184);
+}
+
+@media (max-width: 760px) {
+  section:has(.selected-publications) .max-w-prose,
+  section:has(.publications-list) .max-w-prose {
+    width: min(100% - 2rem, 680px);
+  }
+
+  .publication-card,
+  .publication-detail {
+    grid-template-columns: 1fr;
+  }
+
+  .publication-card__visual,
+  .publication-detail__visual {
+    min-height: 210px;
+  }
+
+  .publication-card__content,
+  .publication-detail__content {
+    padding: 1.5rem;
+  }
+}
+
+/* Academic CV pass: identity-led sidebar and text-first research record. */
+@media (min-width: 1100px) {
+  .page-body {
+    grid-template-columns: 340px minmax(0, 920px);
+    column-gap: clamp(4rem, 5vw, 5.75rem);
+    width: min(1420px, calc(100vw - 5rem));
+  }
+
+  #section-resume-biography #profile {
+    display: flex;
+    align-items: center;
+    padding: 0.35rem 0 0;
+    flex-direction: column;
+  }
+
+  #section-resume-biography .avatar-wrapper,
+  #section-resume-biography .avatar {
+    width: 218px !important;
+    height: 218px !important;
+  }
+
+  #section-resume-biography .avatar {
+    border-width: 3px;
+    box-shadow: 0 14px 36px rgb(15 23 42 / 0.14);
+  }
+
+  #section-resume-biography h1.text-3xl {
+    margin-top: 1.55rem !important;
+    font-size: 2.55rem !important;
+  }
+
+  #section-resume-biography .text-lg {
+    font-size: 1rem;
+  }
+
+  #section-resume-biography .network-icon {
+    gap: 0.85rem;
+    margin-top: 0.95rem;
+  }
+
+  #section-resume-biography .network-icon svg,
+  #section-resume-biography .network-icon span {
+    width: 1.45rem !important;
+    height: 1.45rem !important;
+  }
+
+  #section-resume-biography .pt-2.prose {
+    padding-top: 0.95rem;
+  }
+
+  #section-resume-biography a[href="/uploads/JunHao_Wu.pdf"] {
+    margin-top: 1.25rem !important;
+    padding: 0.68rem 1.15rem !important;
+    font-size: 0.94rem !important;
+  }
+}
+
+.sidebar-profile-meta p {
+  font-size: 0.92rem;
+  line-height: 1.6;
+}
+
+.sidebar-profile-meta p:first-child {
+  font-size: 1rem;
+}
+
+.sidebar-research-tags {
+  gap: 0.45rem;
+  margin-top: 1rem;
+}
+
+.sidebar-research-tags span {
+  padding: 0.32rem 0.65rem;
+  font-size: 0.72rem;
+}
+
+/* Experience: a publication-like research record instead of a logo gallery. */
+.experience-card {
+  grid-template-columns: 122px minmax(0, 1fr);
+  column-gap: 2rem;
+  padding: 2rem 0 !important;
+}
+
+.experience-card__mark {
+  position: relative;
+  display: flex;
+  grid-column: 1;
+  grid-row: 1 / 3;
+  min-height: 86px;
+  padding: 0.2rem 0 0 1.15rem;
+  color: rgb(15 23 42);
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.experience-card__mark::before {
+  position: absolute;
+  top: 0.25rem;
+  bottom: 0;
+  left: 0;
+  width: 3px;
+  border-radius: 999px;
+  background: linear-gradient(180deg, #6510ad, #8b4bc1 58%, #a775d0);
+  content: "";
+}
+
+.experience-card__mark span {
+  font-size: 1.15rem;
+  font-weight: 800;
+  letter-spacing: 0.055em;
+  line-height: 1.2;
+}
+
+.experience-card__mark small {
+  margin-top: 0.38rem;
+  color: rgb(100 116 139);
+  font-size: 0.69rem;
+  font-weight: 650;
+  line-height: 1.35;
+  text-transform: uppercase;
+}
+
+.experience-card__header,
+.experience-card__body {
+  grid-column: 2;
+}
+
+.experience-card__body {
+  padding-top: 0.8rem !important;
+}
+
+.dark .experience-card__mark {
+  color: rgb(248 250 252);
+}
+
+.dark .experience-card__mark small {
+  color: rgb(148 163 184);
+}
+
+/* Awards: compact one-column academic record. */
+#section-resume-awards .max-w-prose {
+  width: 100%;
+  max-width: none !important;
+}
+
+#section-resume-awards .flex.flex-col.gap-6 {
+  display: flex !important;
+  gap: 0 !important;
+  border-top: 1px solid rgb(226 232 240);
+  flex-direction: column;
+}
+
+#section-resume-awards .flex.flex-col.gap-6 > .w-full,
+#section-resume-awards .flex.flex-col.gap-6 > .w-full:nth-child(odd):last-child {
+  display: grid !important;
+  width: 100% !important;
+  min-height: 0;
+  grid-template-columns: minmax(0, 1fr) minmax(220px, 34%);
+  align-items: baseline;
+  padding: 1rem 0 !important;
+  border: 0 !important;
+  border-bottom: 1px solid rgb(226 232 240) !important;
+  border-radius: 0 !important;
+  background: transparent !important;
+  box-shadow: none !important;
+  order: initial;
+  transform: none !important;
+}
+
+#section-resume-awards .flex.flex-col.gap-6 > .w-full::before {
+  display: none;
+}
+
+#section-resume-awards h5 {
+  gap: 0.7rem !important;
+  margin: 0 !important;
+  padding-right: 1.5rem;
+  font-size: 1rem !important;
+  line-height: 1.45 !important;
+}
+
+#section-resume-awards h5 > span:first-child {
+  width: 1.75rem !important;
+  height: 1.75rem !important;
+  flex: 0 0 1.75rem;
+  background: rgb(139 75 193 / 0.08);
+}
+
+#section-resume-awards h5 svg {
+  width: 1rem !important;
+  height: 1rem !important;
+}
+
+#section-resume-awards h5 + div {
+  margin: 0 !important;
+  color: rgb(100 116 139) !important;
+  font-size: 0.82rem !important;
+  line-height: 1.45 !important;
+  text-align: right;
+}
+
+.dark #section-resume-awards .flex.flex-col.gap-6,
+.dark #section-resume-awards .flex.flex-col.gap-6 > .w-full {
+  border-color: rgb(51 65 85) !important;
+  background: transparent !important;
+  box-shadow: none !important;
+}
+
+/* Languages: remove dashboard rings and present CV-style proficiency rows. */
+#section-resume-languages .max-w-prose {
+  width: 100%;
+  max-width: none !important;
+}
+
+#section-resume-languages .grid {
+  display: grid !important;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0 !important;
+  border-top: 1px solid rgb(226 232 240);
+  border-bottom: 1px solid rgb(226 232 240);
+}
+
+#section-resume-languages > .max-w-prose > .flex.items-center {
+  display: grid !important;
+  width: 100%;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0 !important;
+  border-top: 1px solid rgb(226 232 240);
+  border-bottom: 1px solid rgb(226 232 240);
+}
+
+#section-resume-languages > .max-w-prose > .flex.items-center > .flex.flex-col {
+  display: grid !important;
+  grid-template-columns: auto 1fr;
+  gap: 0.25rem 0.55rem;
+  align-items: baseline;
+  padding: 1.15rem 1.25rem 1.15rem 0;
+  text-align: left;
+}
+
+#section-resume-languages > .max-w-prose > .flex.items-center > .flex.flex-col:not(:last-child) {
+  margin-right: 1.25rem;
+  border-right: 1px solid rgb(226 232 240);
+}
+
+#section-resume-languages > .max-w-prose > .flex.items-center > .flex.flex-col > div:first-child {
+  display: none !important;
+}
+
+#section-resume-languages > .max-w-prose > .flex.items-center > .flex.flex-col > .text-1xl {
+  color: rgb(15 23 42);
+  font-size: 0.98rem;
+  font-weight: 750;
+}
+
+#section-resume-languages > .max-w-prose > .flex.items-center > .flex.flex-col > .text-sm {
+  margin-top: 0 !important;
+  font-size: 0.78rem;
+}
+
+#section-resume-languages .flex.flex-col.items-center {
+  position: relative;
+  display: block !important;
+  padding: 1rem 1.25rem 1rem 0;
+  text-align: left;
+}
+
+#section-resume-languages .flex.flex-col.items-center:not(:last-child) {
+  margin-right: 1.25rem;
+  border-right: 1px solid rgb(226 232 240);
+}
+
+#section-resume-languages svg {
+  display: none !important;
+}
+
+#section-resume-languages .flex.flex-col.items-center > div {
+  margin: 0 !important;
+}
+
+/* Skills: typography and tags, no decorative proficiency bars. */
+#section-resume-skills .max-w-prose {
+  width: 100%;
+  max-width: none !important;
+}
+
+#section-resume-skills .grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  gap: 3rem !important;
+  align-items: start;
+}
+
+#section-resume-skills .w-full {
+  max-width: none !important;
+}
+
+#section-resume-skills .w-full .mb-5 {
+  justify-content: flex-start !important;
+  margin-bottom: 0.8rem !important;
+  text-align: left !important;
+}
+
+#section-resume-skills .skills-title,
+#section-resume-skills .hobbies-title {
+  display: block !important;
+  margin: 0 !important;
+  color: rgb(100 116 139);
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+#section-resume-skills .skills-percent {
+  display: none !important;
+}
+
+#section-resume-skills .w-full > div:not(.mb-5) {
+  border-bottom: 1px solid rgb(226 232 240 / 0.9);
+}
+
+@media (max-width: 760px) {
+  .experience-card {
+    grid-template-columns: 1fr;
+  }
+
+  .experience-card__mark,
+  .experience-card__header,
+  .experience-card__body {
+    grid-column: 1;
+    grid-row: auto;
+  }
+
+  .experience-card__mark {
+    min-height: 0;
+    margin-bottom: 1rem;
+  }
+
+  #section-resume-awards .flex.flex-col.gap-6 > .w-full,
+  #section-resume-awards .flex.flex-col.gap-6 > .w-full:nth-child(odd):last-child {
+    grid-template-columns: 1fr;
+    gap: 0.35rem;
+  }
+
+  #section-resume-awards h5 + div {
+    margin-left: 2.45rem !important;
+    text-align: left;
+  }
+
+  #section-resume-languages .grid,
+  #section-resume-skills .grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  #section-resume-languages .flex.flex-col.items-center:not(:last-child) {
+    margin-right: 0;
+    border-right: 0;
+    border-bottom: 1px solid rgb(226 232 240);
+  }
+}
+
+/* Editorial academic layout: generous identity, figure-first papers, adaptive media. */
+@media (min-width: 1100px) {
+  .page-body {
+    grid-template-columns: minmax(285px, 310px) minmax(0, 920px);
+    column-gap: clamp(3.75rem, 5vw, 5.5rem);
+    width: min(1360px, calc(100vw - 5rem));
+  }
+
+  #section-resume-biography .avatar-wrapper,
+  #section-resume-biography .avatar {
+    width: 184px !important;
+    height: 184px !important;
+  }
+
+  #section-resume-biography h1.text-3xl {
+    margin-top: 1.35rem !important;
+    font-size: 2.25rem !important;
+  }
+
+  #section-resume-biography .text-lg {
+    font-size: 0.95rem;
+  }
+
+  #section-resume-biography .network-icon {
+    margin-top: 0.8rem;
+  }
+
+  #section-resume-biography .network-icon svg,
+  #section-resume-biography .network-icon span {
+    height: 1.4rem !important;
+  }
+
+  #section-resume-biography a[href="/uploads/JunHao_Wu.pdf"] {
+    padding: 0.58rem 0.9rem !important;
+    font-size: 0.88rem !important;
+  }
+}
+
+@media (min-width: 761px) {
+  .publication-card {
+    grid-template-columns: minmax(300px, 40%) minmax(0, 1fr);
+    gap: clamp(1.5rem, 3vw, 2.25rem);
+    align-items: center;
+    padding: 1.75rem 0;
+  }
+
+  .publication-card__visual {
+    width: 100%;
+    min-height: 0;
+    aspect-ratio: 16 / 9;
+    padding: 1.25rem 1.35rem;
+    border-radius: 0.7rem;
+  }
+
+  .publication-card__content {
+    padding: 0;
+  }
+
+  .publication-detail {
+    grid-template-columns: minmax(330px, 43%) minmax(0, 1fr);
+    gap: clamp(1.75rem, 3vw, 2.6rem);
+    align-items: center;
+  }
+
+  .publication-detail__visual {
+    min-height: 0;
+    aspect-ratio: 16 / 9;
+  }
+}
+
+.publication-card__visual img,
+.publication-detail__visual img {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.publication-card__visual-copy {
+  max-width: 88%;
+}
+
+/* Projects and events share the publication list's editorial rhythm. */
+.academic-list-section > .flex,
+#section-resume-awards > .flex {
+  width: 100%;
+  max-width: none;
+  padding-inline: 0;
+}
+
+.academic-entry-list {
+  width: 100%;
+  border-top: 1px solid rgb(226 232 240);
+}
+
+.academic-entry {
+  display: grid;
+  grid-template-columns: minmax(0, 40%) minmax(0, 1fr);
+  gap: clamp(1.5rem, 3vw, 2.25rem);
+  align-items: center;
+  padding: 1.75rem 0;
+  border-bottom: 1px solid rgb(226 232 240);
+}
+
+.academic-entry__image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  aspect-ratio: 16 / 9;
+  min-width: 0;
+  overflow: hidden;
+  border-radius: 0.7rem;
+  background: #fbfafc;
+}
+
+.academic-entry__image img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.academic-entry__body { min-width: 0; }
+.academic-entry__body time {
+  color: #64748b;
+  font-size: 0.78rem;
+  font-weight: 650;
+}
+.academic-entry__body h3 {
+  margin: 0.45rem 0 0.6rem;
+  color: #0f172a;
+  font-size: clamp(1.12rem, 2vw, 1.38rem);
+  font-weight: 750;
+  line-height: 1.28;
+}
+.academic-entry__body h3 a { color: inherit; }
+.academic-entry__body p {
+  margin: 0;
+  color: #475569;
+  font-size: 0.95rem;
+  line-height: 1.65;
+}
+.academic-entry__links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem 1.25rem;
+  margin-top: 0.8rem;
+  font-size: 0.85rem;
+  font-weight: 650;
+}
+.academic-entry__links a { color: #6510ad; }
+.academic-entry a:hover { text-decoration: underline; text-underline-offset: 3px; }
+.academic-entry a:focus-visible { outline: 2px solid #6510ad; outline-offset: 4px; }
+.academic-entry--text-only { grid-template-columns: 1fr; }
+.dark .academic-entry-list,
+.dark .academic-entry { border-color: #334155; }
+.dark .academic-entry__image { background: #1e293b; }
+.dark .academic-entry__body h3 { color: #f9f7fa; }
+.dark .academic-entry__body p { color: #cbd5e1; }
+.dark .academic-entry__body time { color: #94a3b8; }
+.dark .academic-entry__links a { color: #d7bdf0; }
+
+@media (max-width: 760px) {
+  .academic-entry { grid-template-columns: 1fr; gap: 1rem; }
+}
+
+.publication-card__visual-copy strong {
+  font-size: clamp(1.7rem, 3vw, 2.25rem);
+}
+
+.experience-card {
+  grid-template-columns: 210px minmax(0, 1fr);
+  column-gap: 1.9rem;
+  padding: 1.8rem 0 !important;
+}
+
+.experience-card__media {
+  display: flex;
+  height: 118px !important;
+  padding: 0 !important;
+  overflow: hidden;
+  border: 0 !important;
+  border-radius: 0.65rem !important;
+  background: transparent !important;
+  align-items: center;
+  justify-content: center;
+}
+
+.experience-card__media img {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.experience-card--meiya .experience-card__media {
+  background: rgb(241 245 249) !important;
+}
+
+.experience-card--meiya .experience-card__media img {
+  width: 100%;
+  height: 100%;
+  max-height: none;
+  object-fit: cover;
+}
+
+.experience-card__header {
+  align-items: flex-start;
+}
+
+@media (max-width: 760px) {
+  .publication-card__visual,
+  .publication-detail__visual {
+    width: 100%;
+    min-height: 0;
+    aspect-ratio: 16 / 9;
+  }
+
+  .experience-card__media {
+    width: min(100%, 360px);
+    height: 120px !important;
+  }
+}
+
+/* Give research figures half of the row, instead of enlarging empty frames. */
+@media (min-width: 900px) {
+  .selected-publications .publication-card,
+  .publications-list .publication-detail {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    column-gap: clamp(1.25rem, 2vw, 1.75rem);
+    padding-top: 1.35rem;
+    padding-bottom: 1.35rem;
+  }
+}
+
+/* A shared landscape footprint, close to the overview figures' native ratios. */
+.selected-publications .publication-card__visual,
+.publications-list .publication-detail__visual {
+  width: 100% !important;
+  height: auto !important;
+  min-height: 0 !important;
+  aspect-ratio: 2 / 1 !important;
+  box-sizing: border-box;
+  align-self: center;
+}
+
+/* Preserve the complete figures inside the shared frame. */
+.publication-card--paper .publication-card__visual,
+.publication-detail--paper .publication-detail__visual {
+  position: relative;
+  display: grid !important;
+  grid-template-columns: minmax(0, 1fr);
+  grid-template-rows: minmax(0, 1fr);
+  justify-content: stretch;
+  place-items: center;
+  width: 100% !important;
+  min-height: 0 !important;
+  aspect-ratio: 2 / 1 !important;
+  padding: 0 !important;
+  overflow: hidden !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  background: #fff !important;
+  isolation: auto !important;
+}
+
+.publication-card--paper .publication-card__visual::before,
+.publication-card--paper .publication-card__visual::after,
+.publication-detail--paper .publication-detail__visual::before,
+.publication-detail--paper .publication-detail__visual::after {
+  display: none !important;
+}
+
+.publication-card--paper .publication-card__visual img,
+.publication-detail--paper .publication-detail__visual img {
+  position: absolute !important;
+  top: 0;
+  left: 0;
+  display: block !important;
+  width: 100% !important;
+  height: 100% !important;
+  /* Markdown prose styles add vertical margins to images, even when absolute. */
+  margin: 0 !important;
+  padding: 0 !important;
+  max-height: none !important;
+  max-width: none !important;
+  box-sizing: border-box;
+  object-fit: contain !important;
+  object-position: center !important;
+}
+
+/* Show only the upper overview; keep the original full figure untouched. */
+.publication-figure--asi-overview .publication-figure__crop {
+  display: block;
+  position: relative;
+  margin: 0;
+  width: 100%;
+  aspect-ratio: 1455 / 580;
+  overflow: hidden;
+}
+
+.publication-card--paper .publication-figure--asi-overview img,
+.publication-detail--paper .publication-figure--asi-overview img {
+  position: absolute !important;
+  height: auto !important;
+  top: 0;
+  left: 0;
+  margin: 0 !important;
+}
+
+.selected-publications .publication-card__authors,
+.selected-publications .publication-card__summary,
+.publications-list .publication-card__authors {
+  text-wrap: pretty;
+  word-break: normal;
+  overflow-wrap: normal;
+  hyphens: none;
+}
+
+.publication-card__authors > span,
+.publication-card__authors strong,
+.publication-card__links a,
+.publication-detail__links a {
+  white-space: nowrap;
+}
+
+.publication-card__links,
+.publication-detail__links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.7rem 1.15rem;
+  align-items: center;
+  margin-top: 0.8rem;
+}
+
+.publication-card__links .publication-card__link {
+  margin-top: 0 !important;
+}
+
+.publication-detail__links a {
+  color: #6510ad;
+  font-size: 0.86rem;
+  font-weight: 750;
+  text-decoration: none;
+}
+
+.publication-detail__links a:hover {
+  color: #4b0c77;
+  text-decoration: underline;
+  text-underline-offset: 0.25rem;
+}
+
+/* The full publication list follows the homepage's compact research rows.
+   Symmetric gutters keep each figure away from the outside edge. */
+.publications-list {
+  gap: 0;
+}
+
+.publications-list .publication-detail {
+  padding: 1.5rem 1.25rem;
+  border: 0;
+  border-bottom: 1px solid rgb(203 213 225 / 0.7);
+  border-radius: 0;
+  box-shadow: none;
+  background: transparent;
+  align-items: center;
+}
+
+.publications-list .publication-detail__content {
+  min-width: 0;
+  padding: 0;
+}
+
+.publications-list .publication-detail__content > p:not(.publication-card__authors, .publication-detail__notice) {
+  margin: 0.8rem 0;
+  font-family: inherit;
+  font-size: 1rem;
+  line-height: 1.65;
+  text-wrap: pretty;
+}
+
+.publications-list .publication-card__authors {
+  margin: 0.65rem 0;
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+.publications-list .publication-detail__visual {
+  justify-self: center;
+  margin: 0;
+}
+
+@media (max-width: 899px) {
+  .publications-list .publication-detail {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 1.15rem;
+    padding: 1.4rem 0.75rem;
+  }
+}
+
+.dark .publication-card--paper .publication-card__visual,
+.dark .publication-detail--paper .publication-detail__visual {
+  border-color: rgb(71 85 105 / 0.8);
+  background: #fff !important;
+}
+
+/* Refined academic identity card: quieter hierarchy, stronger grouping, and
+   a clear visual anchor for the fixed profile column. */
+@media (min-width: 1100px) {
+  /* Extra specificity keeps the identity treatment stable across the theme's
+     later responsive rules. */
+  html body .page-body > #section-resume-biography #profile {
+    padding: 1.15rem 0.7rem 1.35rem !important;
+    border: 0 !important;
+    border-radius: 0 !important;
+    background: transparent !important;
+    box-shadow: none !important;
+  }
+
+  html body .page-body > #section-resume-biography #profile::before {
+    display: none !important;
+  }
+
+  html body .page-body > #section-resume-biography .avatar-wrapper,
+  html body .page-body > #section-resume-biography .avatar {
+    width: 224px !important;
+    height: 224px !important;
+  }
+
+  html body .page-body > #section-resume-biography .avatar-wrapper {
+    border-radius: 50% !important;
+    overflow: hidden !important;
+  }
+
+  html body .page-body > #section-resume-biography .avatar {
+    border: 0 !important;
+    border-radius: 50% !important;
+    box-shadow: 0 12px 28px rgb(15 23 42 / 0.14) !important;
+    object-fit: cover !important;
+  }
+
+  html body .page-body > #section-resume-biography h1.text-3xl {
+    margin-top: 1.1rem !important;
+    font-size: clamp(2.2rem, 3.5vw, 2.6rem) !important;
+    line-height: 1.05 !important;
+  }
+
+  html body .page-body > #section-resume-biography .text-lg {
+    font-size: 1.05rem !important;
+  }
+
+  html body .page-body > #section-resume-biography .network-icon {
+    display: flex !important;
+    justify-content: center !important;
+    gap: 0.34rem !important;
+    margin-top: 0.9rem !important;
+    padding-top: 0 !important;
+    border-top: 0 !important;
+  }
+
+  html body .page-body > #section-resume-biography .network-icon a {
+    display: inline-flex !important;
+    width: 2.25rem !important;
+    height: 2.25rem !important;
+    align-items: center;
+    justify-content: center;
+    border: 0;
+    border-radius: 0;
+    background: transparent;
+  }
+
+  html body .page-body > #section-resume-biography .network-icon svg,
+  html body .page-body > #section-resume-biography .network-icon span {
+    width: 2.3rem !important;
+    height: 2.3rem !important;
+  }
+
+  html body .page-body > #section-resume-biography #profile .network-icon li > a > svg,
+  html body .page-body > #section-resume-biography #profile .network-icon li > a > span {
+    width: 1.72rem !important;
+    height: 1.72rem !important;
+    max-width: none !important;
+    max-height: none !important;
+  }
+
+  html body .page-body > #section-resume-biography #profile .network-icon li > a > span {
+    width: 1.5rem !important;
+    height: 1.5rem !important;
+  }
+
+  html body .page-body > #section-resume-biography #profile,
+  html body .page-body > #section-resume-biography #profile * {
+    font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif !important;
+  }
+
+  html body .page-body > #section-resume-biography .sidebar-profile-meta {
+    margin-top: 1rem !important;
+    padding-top: 0 !important;
+    border-top: 0 !important;
+  }
+
+  html body .page-body > #section-resume-biography .sidebar-education,
+  html body .page-body > #section-resume-biography .sidebar-research-focus {
+    width: 100%;
+    text-align: left;
+  }
+
+  html body .page-body > #section-resume-biography .sidebar-education {
+    display: grid;
+    gap: 1.05rem;
+    padding-left: 0.85rem;
+    border-left: 2px solid rgb(139 75 193 / 0.42);
+  }
+
+  html body .page-body > #section-resume-biography .sidebar-education__item {
+    display: grid;
+    gap: 0.16rem;
+  }
+
+  html body .page-body > #section-resume-biography .sidebar-education__item strong {
+    color: rgb(15 23 42);
+    font-size: 1rem;
+    font-weight: 750;
+    line-height: 1.45;
+  }
+
+  html body .page-body > #section-resume-biography .sidebar-education__item span {
+    color: rgb(100 116 139);
+    font-size: 0.88rem;
+    line-height: 1.45;
+  }
+
+  html body .page-body > #section-resume-biography .sidebar-education p,
+  html body .page-body > #section-resume-biography .sidebar-research-focus p {
+    margin: 0 !important;
+    color: rgb(71 85 105) !important;
+    font-size: 0.78rem !important;
+    line-height: 1.55 !important;
+  }
+
+  html body .page-body > #section-resume-biography .sidebar-education p:first-child,
+  html body .page-body > #section-resume-biography .sidebar-education p:nth-child(3) {
+    margin-top: 0.15rem !important;
+    color: rgb(15 23 42) !important;
+    font-size: 0.82rem !important;
+    font-weight: 700 !important;
+  }
+
+  html body .page-body > #section-resume-biography .sidebar-education p:nth-child(3) {
+    margin-top: 0.7rem !important;
+  }
+
+  html body .page-body > #section-resume-biography .sidebar-research-focus {
+    margin-top: 1.35rem;
+    padding-top: 1.1rem;
+    border-top: 1px solid rgb(203 213 225 / 0.7);
+  }
+
+  html body .page-body > #section-resume-biography .sidebar-research-focus__label {
+    display: block;
+    margin-bottom: 0.62rem;
+    color: #6510ad;
+    font-size: 0.95rem;
+    font-weight: 800;
+    letter-spacing: 0.13em;
+    text-transform: uppercase;
+  }
+
+  html body .page-body > #section-resume-biography .sidebar-research-focus__item {
+    display: block;
+    color: rgb(66 47 83);
+    font-size: 1rem;
+    font-weight: 650;
+    line-height: 1.78;
+  }
+
+  html body .page-body > #section-resume-biography .sidebar-research-focus__item::before {
+    display: inline-block;
+    width: 0.35rem;
+    height: 0.35rem;
+    margin: 0 0.5rem 0.12rem 0;
+    border-radius: 50%;
+    background: #9156c4;
+    content: "";
+  }
+
+  html body .page-body > #section-resume-biography .sidebar-research-focus p {
+    color: rgb(66 47 83) !important;
+    font-size: 0.75rem !important;
+    font-weight: 650 !important;
+    letter-spacing: 0.01em;
+  }
+
+  html body .page-body > #section-resume-biography a[href="/uploads/JunHao_Wu.pdf"] {
+    display: none !important;
+  }
+
+  html body .page-body > #section-resume-biography a[href="/uploads/JunHao_Wu.pdf"] {
+    width: min(100%, 230px);
+    justify-content: center;
+    margin-top: 1.3rem !important;
+    padding: 0.7rem 1rem !important;
+    border: 1px solid rgb(101 16 173 / 0.3) !important;
+    border-radius: 0.75rem !important;
+    background: linear-gradient(135deg, rgb(249 247 252 / 0.9), rgb(247 244 250 / 0.9)) !important;
+    color: rgb(65 33 91) !important;
+    font-size: 0.92rem !important;
+    font-weight: 750 !important;
+    letter-spacing: 0.01em;
+    box-shadow: 0 5px 14px rgb(15 23 42 / 0.07);
+    transition: transform 160ms ease, box-shadow 160ms ease, border-color 160ms ease;
+  }
+
+  html body .page-body > #section-resume-biography a[href="/uploads/JunHao_Wu.pdf"]:hover {
+    border-color: rgb(139 75 193 / 0.65) !important;
+    box-shadow: 0 8px 18px rgb(101 16 173 / 0.13);
+    transform: translateY(-2px);
+  }
+
+  #section-resume-biography #profile {
+    padding: 2.2rem 1.65rem 1.8rem !important;
+    border: 1px solid rgb(148 163 184 / 0.42) !important;
+    border-radius: 1.5rem !important;
+    background:
+      radial-gradient(circle at 100% 0%, rgb(139 75 193 / 0.12), transparent 34%),
+      linear-gradient(160deg, rgb(255 255 255 / 0.99), rgb(251 249 253 / 0.96)) !important;
+    box-shadow: 0 18px 48px rgb(15 23 42 / 0.09), 0 2px 8px rgb(15 23 42 / 0.04) !important;
+  }
+
+  #section-resume-biography #profile::before {
+    right: 1.5rem !important;
+    left: 1.5rem !important;
+    height: 5px !important;
+    background: linear-gradient(90deg, #6510ad 0%, #8b4bc1 52%, #a775d0 100%) !important;
+  }
+
+  #section-resume-biography .avatar-wrapper,
+  #section-resume-biography .avatar {
+    width: 192px !important;
+    height: 192px !important;
+  }
+
+  #section-resume-biography .avatar {
+    border: 5px solid rgb(255 255 255 / 0.98) !important;
+    box-shadow: 0 15px 34px rgb(15 23 42 / 0.18) !important;
+  }
+
+  #section-resume-biography h1.text-3xl {
+    margin-top: 1.25rem !important;
+    font-size: clamp(2rem, 3vw, 2.35rem) !important;
+    letter-spacing: -0.055em;
+  }
+
+  #section-resume-biography h1.text-3xl::after {
+    width: 3.2rem !important;
+    height: 3px !important;
+    margin: 0.45rem auto 0 !important;
+    border-radius: 999px;
+    background: linear-gradient(90deg, #6510ad, #a775d0) !important;
+  }
+
+  #section-resume-biography .network-icon {
+    display: flex !important;
+    justify-content: center;
+    gap: 0.6rem !important;
+    width: 100%;
+    margin-top: 1rem !important;
+    padding-top: 1rem;
+    border-top: 1px solid rgb(203 213 225 / 0.72);
+  }
+
+  #section-resume-biography .network-icon a {
+    display: inline-flex;
+    width: 2.25rem;
+    height: 2.25rem;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgb(148 163 184 / 0.36);
+    border-radius: 0.7rem;
+    background: rgb(255 255 255 / 0.72);
+    transition: border-color 160ms ease, background 160ms ease, transform 160ms ease;
+  }
+
+  #section-resume-biography .network-icon a:hover {
+    border-color: rgb(139 75 193 / 0.55);
+    background: rgb(249 247 252 / 0.92);
+    transform: translateY(-2px);
+  }
+
+  #section-resume-biography .sidebar-profile-meta {
+    margin-top: 1.15rem;
+    padding-top: 1rem;
+    border-top: 1px solid rgb(203 213 225 / 0.72);
+  }
+
+  #section-resume-biography .sidebar-profile-meta p:first-child {
+    color: rgb(15 23 42) !important;
+    font-size: 0.94rem !important;
+    letter-spacing: 0.01em;
+  }
+
+  #section-resume-biography .sidebar-profile-meta p + p {
+    margin-top: 0.18rem !important;
+    color: rgb(100 116 139) !important;
+  }
+
+  #section-resume-biography .sidebar-research-tags {
+    gap: 0.42rem !important;
+    margin-top: 0.95rem !important;
+  }
+
+  #section-resume-biography .sidebar-research-tags span {
+    padding: 0.3rem 0.62rem !important;
+    border-color: rgb(116 49 184 / 0.28) !important;
+    background: rgb(249 247 252 / 0.72) !important;
+    font-size: 0.68rem !important;
+  }
+
+  #section-resume-biography a[href="/uploads/JunHao_Wu.pdf"] {
+    width: 100%;
+    justify-content: center;
+    margin-top: 1.35rem !important;
+    border-color: rgb(101 16 173 / 0.28) !important;
+    background: rgb(255 255 255 / 0.76) !important;
+    font-weight: 650;
+  }
+}
+
+@media (max-width: 760px) {
+  #section-resume-biography #profile {
+    padding: 1.75rem 1.25rem 1.45rem !important;
+    border-radius: 1.25rem !important;
+  }
+
+  #section-resume-biography .avatar-wrapper,
+  #section-resume-biography .avatar {
+    width: 156px !important;
+    height: 156px !important;
+  }
+}
+
+/* Keep Projects and Events visually aligned with the publication list.
+   These rules intentionally come last so legacy collection/card utilities
+   cannot turn the entries back into a multi-column card grid. */
+#academic-projects,
+#academic-events {
+  padding-top: 2.7rem !important;
+  padding-bottom: 2.7rem !important;
+}
+
+#academic-projects > .flex,
+#academic-events > .flex {
+  width: 100% !important;
+  max-width: none !important;
+  align-items: stretch !important;
+}
+
+#academic-projects > .flex:first-of-type,
+#academic-events > .flex:first-of-type {
+  padding-inline: 0 !important;
+}
+
+#academic-projects > .flex:first-of-type > .mb-6,
+#academic-events > .flex:first-of-type > .mb-6 {
+  align-self: flex-start !important;
+  margin-bottom: 1.25rem !important;
+  font-size: clamp(1.8rem, 3vw, 2.35rem) !important;
+  font-weight: 760 !important;
+  letter-spacing: -0.035em;
+  line-height: 1.15 !important;
+  text-align: left !important;
+}
+
+#academic-projects .academic-entry-list,
+#academic-events .academic-entry-list {
+  display: flex !important;
+  flex-direction: column !important;
+  width: 100% !important;
+  margin: 0 !important;
+  border-top: 1px solid rgb(226 232 240) !important;
+}
+
+#academic-projects .academic-entry,
+#academic-events .academic-entry {
+  display: grid !important;
+  grid-template-columns: minmax(250px, 40%) minmax(0, 1fr) !important;
+  gap: clamp(1.5rem, 3vw, 2.25rem) !important;
+  align-items: center !important;
+  width: 100% !important;
+  min-height: 0 !important;
+  padding: 1.75rem 0 !important;
+  border: 0 !important;
+  border-bottom: 1px solid rgb(226 232 240) !important;
+  border-radius: 0 !important;
+  background: transparent !important;
+  box-shadow: none !important;
+}
+
+#academic-projects .academic-entry__image,
+#academic-events .academic-entry__image {
+  display: flex !important;
+  width: 100% !important;
+  aspect-ratio: 16 / 9 !important;
+  min-height: 0 !important;
+  margin: 0 !important;
+  overflow: hidden !important;
+  align-items: center !important;
+  justify-content: center !important;
+  border: 1px solid rgb(226 232 240) !important;
+  border-radius: 0.7rem !important;
+  background: #fbfafc !important;
+}
+
+#academic-projects .academic-entry__image img,
+#academic-events .academic-entry__image img {
+  display: block !important;
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: contain !important;
+}
+
+#academic-projects .academic-entry__body,
+#academic-events .academic-entry__body {
+  min-width: 0 !important;
+  padding: 0 !important;
+}
+
+#academic-projects .academic-entry__body h3,
+#academic-events .academic-entry__body h3 {
+  margin: 0.45rem 0 0.6rem !important;
+  font-size: clamp(1.12rem, 2vw, 1.38rem) !important;
+  line-height: 1.28 !important;
+}
+
+#academic-projects .academic-entry__body p,
+#academic-events .academic-entry__body p {
+  margin: 0 !important;
+  font-size: 0.95rem !important;
+  line-height: 1.65 !important;
+}
+
+#academic-projects .academic-entry__links,
+#academic-events .academic-entry__links {
+  margin-top: 0.8rem !important;
+}
+
+/* Education is intentionally omitted from the home page. Hide any legacy
+   generated education section if a cached theme partial still emits it. */
+#section-resume-education,
+#section-education {
+  display: none !important;
+}
+
+@media (max-width: 760px) {
+  #academic-projects .academic-entry,
+  #academic-events .academic-entry {
+    grid-template-columns: 1fr !important;
+    gap: 1rem !important;
+    padding: 1.35rem 0 !important;
+  }
+
+  #academic-projects .academic-entry__image,
+  #academic-events .academic-entry__image {
+    aspect-ratio: 16 / 9 !important;
+  }
+}
+
+/* Use media-specific frames so the source artwork fills the row instead of
+   floating inside a wide 16:9 box with visible side gutters. */
+#academic-projects .academic-entry__image {
+  aspect-ratio: 3 / 2 !important;
+}
+
+#academic-events .academic-entry__image {
+  aspect-ratio: 4 / 3 !important;
+}
+
+#academic-projects .academic-entry__image img,
+#academic-events .academic-entry__image img {
+  object-fit: cover !important;
+  object-position: center !important;
+}
+
+/* SonicArt is a wide poster; preserve its edge-to-edge lettering rather than
+   cropping the title to fit the 3:2 project frame. */
+#academic-projects .academic-entry--sonicart-intelligence .academic-entry__image {
+  aspect-ratio: 16 / 9 !important;
+}
+
+#academic-projects .academic-entry--sonicart-intelligence .academic-entry__image img {
+  object-fit: contain !important;
+}
+
+/* Fallback selector for Hugo versions that normalize the bundle slug. */
+#academic-projects .academic-entry__image:has(img[alt*="SonicArt"]) {
+  aspect-ratio: 16 / 9 !important;
+}
+
+#academic-projects .academic-entry__image:has(img[alt*="SonicArt"]) img {
+  object-fit: contain !important;
+}
+
+/* SonicArt is the second project entry in the current collection; keep this
+   structural fallback so its lettering remains intact even if alt text or
+   bundle slugs are transformed by a future theme update. */
+#academic-projects .academic-entry:nth-child(2) .academic-entry__image {
+  aspect-ratio: 16 / 9 !important;
+}
+
+#academic-projects .academic-entry:nth-child(2) .academic-entry__image img {
+  object-fit: contain !important;
+}
+
+/* Compact inline icons keep project resources scannable without changing the
+   existing link labels. */
+#academic-projects .academic-entry__links a,
+#academic-events .academic-entry__links a {
+  display: inline-flex !important;
+  align-items: center;
+  gap: 0.38rem;
+}
+
+.academic-entry__icon {
+  width: 1.05em;
+  height: 1.05em;
+  flex: 0 0 auto;
+  vertical-align: -0.12em;
+}
+
+/* Final academic-CV overrides (kept last to supersede legacy theme rules). */
+.page-body section:has(.experience-grid) .experience-card {
+  display: grid !important;
+  grid-template-columns: minmax(0, 1fr) 220px !important;
+  grid-template-rows: auto auto !important;
+  gap: 0.75rem 2.4rem !important;
+  align-items: start !important;
+  padding: 1.75rem 0 !important;
+}
+
+.page-body section:has(.experience-grid) .experience-card__header {
+  grid-column: 1 !important;
+  grid-row: 1 !important;
+  padding: 0 !important;
+}
+
+.page-body section:has(.experience-grid) .experience-card__logo {
+  display: flex !important;
+  width: 220px !important;
+  height: auto !important;
+  min-height: 0 !important;
+  grid-column: 2 !important;
+  grid-row: 1 / 3 !important;
+  align-self: center !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  overflow: visible !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  background: transparent !important;
+}
+
+.page-body section:has(.experience-grid) .experience-card__logo img {
+  display: block !important;
+  width: 100% !important;
+  height: auto !important;
+  max-height: none !important;
+  border-radius: 0.55rem;
+  object-fit: contain !important;
+}
+
+.page-body section:has(.experience-grid) .experience-card__body {
+  grid-column: 1 !important;
+  grid-row: 2 !important;
+  padding: 0 !important;
+}
+
+.page-body section:has(.experience-grid) .experience-card__body p {
+  max-width: 64ch;
+}
+
+@media (min-width: 1100px) {
+  .page-body:has(> #section-resume-biography) {
+    grid-template-columns: 340px minmax(0, 920px);
+    column-gap: clamp(4rem, 5vw, 5.75rem);
+    width: min(1420px, calc(100vw - 5rem));
+  }
+
+  .page-body #section-resume-biography #profile .avatar-wrapper,
+  .page-body #section-resume-biography #profile .avatar {
+    width: 218px !important;
+    height: 218px !important;
+  }
+
+  .page-body #section-resume-biography #profile h1.text-3xl {
+    margin-top: 1.55rem !important;
+    font-size: 2.55rem !important;
+  }
+
+  .page-body #section-resume-biography #profile .text-lg { font-size: 1rem; }
+  .page-body #section-resume-biography #profile .network-icon { gap: 0.85rem; margin-top: 0.95rem; }
+  .page-body #section-resume-biography #profile .network-icon svg,
+  .page-body #section-resume-biography #profile .network-icon span { width: 1.45rem !important; height: 1.45rem !important; }
+  .page-body #section-resume-biography #profile a[href="/uploads/JunHao_Wu.pdf"] {
+    margin-top: 1.25rem !important;
+    padding: 0.68rem 1.15rem !important;
+    font-size: 0.94rem !important;
+  }
+}
+
+.sidebar-profile-meta p { font-size: 0.92rem; line-height: 1.6; }
+.sidebar-profile-meta p:first-child { font-size: 1rem; }
+.sidebar-research-tags { gap: 0.45rem; margin-top: 1rem; }
+.sidebar-research-tags span { padding: 0.32rem 0.65rem; font-size: 0.72rem; }
+
+.experience-card {
+  grid-template-columns: 210px minmax(0, 1fr) !important;
+  column-gap: 2.15rem !important;
+  padding: 1.75rem 0 !important;
+}
+
+.experience-card__logo {
+  display: flex;
+  width: 210px;
+  height: auto;
+  min-height: 0;
+  grid-column: 1;
+  grid-row: 1 / 3;
+  align-self: start;
+  margin: 0.15rem 0 0;
+  padding: 0;
+  overflow: visible;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  align-items: center;
+  justify-content: center;
+}
+
+.experience-card__logo img {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: none;
+  border-radius: 0.45rem;
+  object-fit: contain;
+}
+
+.experience-card__logo--photo {
+  padding: 0;
+}
+
+.experience-card__logo--photo img {
+  object-fit: cover;
+}
+
+.dark .experience-card__logo {
+  border-color: transparent;
+  background: transparent;
+}
+
+.experience-card__mark {
+  position: relative;
+  display: flex;
+  grid-column: 1;
+  grid-row: 1 / 3;
+  min-height: 86px;
+  padding: 0.2rem 0 0 1.15rem;
+  color: rgb(15 23 42);
+  flex-direction: column;
+}
+
+.experience-card__mark::before {
+  position: absolute;
+  top: 0.25rem;
+  bottom: 0;
+  left: 0;
+  width: 3px;
+  border-radius: 999px;
+  background: linear-gradient(180deg, #6510ad, #8b4bc1 58%, #a775d0);
+  content: "";
+}
+
+.experience-card__mark span { font-size: 1.15rem; font-weight: 800; letter-spacing: 0.055em; line-height: 1.2; }
+.experience-card__mark small { margin-top: 0.38rem; color: rgb(100 116 139); font-size: 0.69rem; font-weight: 650; line-height: 1.35; text-transform: uppercase; }
+.experience-card__header, .experience-card__body { grid-column: 2; }
+.experience-card__body { padding-top: 0.8rem !important; }
+.experience-card__body p { max-width: 68ch; }
+.dark .experience-card__mark { color: rgb(248 250 252); }
+.dark .experience-card__mark small { color: rgb(148 163 184); }
+
+#section-resume-awards .max-w-prose,
+#section-resume-languages .max-w-prose,
+#section-resume-skills .max-w-prose { width: 100%; max-width: none !important; }
+
+#section-resume-awards .flex.flex-col.gap-6 {
+  display: flex !important;
+  gap: 0 !important;
+  border-top: 1px solid rgb(226 232 240);
+  flex-direction: column;
+}
+
+#section-resume-awards .flex.flex-col.gap-6 > .w-full,
+#section-resume-awards .flex.flex-col.gap-6 > .w-full:nth-child(odd):last-child {
+  display: grid !important;
+  width: 100% !important;
+  min-height: 0;
+  grid-template-columns: minmax(0, 1fr) minmax(220px, 34%);
+  align-items: baseline;
+  padding: 1rem 0 !important;
+  border: 0 !important;
+  border-bottom: 1px solid rgb(226 232 240) !important;
+  border-radius: 0 !important;
+  background: transparent !important;
+  box-shadow: none !important;
+  order: initial;
+  transform: none !important;
+}
+
+#section-resume-awards .flex.flex-col.gap-6 > .w-full::before { display: none; }
+#section-resume-awards .flex.flex-col.gap-6 > .w-full:nth-child(n) { order: 0 !important; }
+#section-resume-awards .flex.flex-col.gap-6 > .w-full:nth-child(7) { order: 1 !important; }
+#section-resume-awards .flex.flex-col.gap-6 > .w-full:nth-child(4) { order: 2 !important; }
+#section-resume-awards .flex.flex-col.gap-6 > .w-full:nth-child(6) { order: 3 !important; }
+#section-resume-awards .flex.flex-col.gap-6 > .w-full:nth-child(1) { order: 4 !important; }
+#section-resume-awards .flex.flex-col.gap-6 > .w-full:nth-child(2) { order: 5 !important; }
+#section-resume-awards .flex.flex-col.gap-6 > .w-full:nth-child(5) { order: 6 !important; }
+#section-resume-awards .flex.flex-col.gap-6 > .w-full:nth-child(3) { order: 7 !important; }
+#section-resume-awards .flex.flex-col.gap-6 > .w-full:nth-child(8) { order: 8 !important; }
+#section-resume-awards .flex.flex-col.gap-6 > .w-full:nth-child(9) { order: 9 !important; }
+#section-resume-awards h5 { gap: 0.7rem !important; margin: 0 !important; padding-right: 1.5rem; font-size: 1rem !important; line-height: 1.45 !important; }
+#section-resume-awards h5 > span:first-child { width: 1.75rem !important; height: 1.75rem !important; flex: 0 0 1.75rem; background: rgb(139 75 193 / 0.08); }
+#section-resume-awards h5 svg { width: 1rem !important; height: 1rem !important; }
+#section-resume-awards h5 + div { margin: 0 !important; color: rgb(100 116 139) !important; font-size: 0.82rem !important; line-height: 1.45 !important; text-align: right; }
+.dark #section-resume-awards .flex.flex-col.gap-6,
+.dark #section-resume-awards .flex.flex-col.gap-6 > .w-full { border-color: rgb(51 65 85) !important; background: transparent !important; box-shadow: none !important; }
+
+#section-resume-languages .grid {
+  display: grid !important;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0 !important;
+  border-top: 1px solid rgb(226 232 240);
+  border-bottom: 1px solid rgb(226 232 240);
+}
+
+#section-resume-languages .flex.flex-col.items-center { display: block !important; padding: 1rem 1.25rem 1rem 0; text-align: left; }
+#section-resume-languages .flex.flex-col.items-center:not(:last-child) { margin-right: 1.25rem; border-right: 1px solid rgb(226 232 240); }
+#section-resume-languages svg { display: none !important; }
+#section-resume-languages .flex.flex-col.items-center > div { margin: 0 !important; }
+
+#section-resume-skills .grid { grid-template-columns: repeat(2, minmax(0, 1fr)) !important; gap: 3rem !important; align-items: start; }
+#section-resume-skills .w-full { max-width: none !important; }
+#section-resume-skills .w-full .mb-5 { justify-content: flex-start !important; margin-bottom: 0.8rem !important; text-align: left !important; }
+#section-resume-skills .skills-title,
+#section-resume-skills .hobbies-title { display: block !important; margin: 0 !important; color: rgb(100 116 139); font-size: 0.72rem; font-weight: 800; letter-spacing: 0.1em; text-transform: uppercase; }
+#section-resume-skills .skills-percent { display: none !important; }
+#section-resume-skills .skills-wrapper { display: none !important; }
+#section-resume-skills .w-full > div:not(.mb-5) { border-bottom: 0; }
+#section-resume-skills .w-full > .skills-content {
+  display: inline-flex !important;
+  margin: 0 0.42rem 0.5rem;
+  padding: 0.38rem 0.65rem;
+  border: 1px solid rgb(203 213 225 / 0.9);
+  border-radius: 0.35rem;
+  background: rgb(248 250 252 / 0.7);
+  align-items: center;
+}
+
+#section-resume-skills .skills-name {
+  font-size: 0.75rem;
+  font-weight: 650;
+  letter-spacing: 0.035em;
+}
+
+.dark #section-resume-languages > .max-w-prose > .flex.items-center,
+.dark #section-resume-languages > .max-w-prose > .flex.items-center > .flex.flex-col:not(:last-child),
+.dark #section-resume-skills .w-full > .skills-content {
+  border-color: rgb(51 65 85);
+}
+
+.dark #section-resume-languages > .max-w-prose > .flex.items-center > .flex.flex-col > .text-1xl {
+  color: rgb(248 250 252);
+}
+
+.dark #section-resume-skills .w-full > .skills-content {
+  background: rgb(15 23 42 / 0.7);
+}
+
+@media (max-width: 760px) {
+  .page-body section:has(.experience-grid) .experience-card {
+    grid-template-columns: 1fr !important;
+    grid-template-rows: auto auto auto !important;
+    gap: 0.9rem !important;
+  }
+
+  .page-body section:has(.experience-grid) .experience-card__header,
+  .page-body section:has(.experience-grid) .experience-card__logo,
+  .page-body section:has(.experience-grid) .experience-card__body {
+    grid-column: 1 !important;
+    grid-row: auto !important;
+  }
+
+  .page-body section:has(.experience-grid) .experience-card__logo {
+    width: min(100%, 260px) !important;
+    justify-self: start;
+  }
+
+  .experience-card { grid-template-columns: 1fr !important; }
+  .experience-card__mark, .experience-card__header, .experience-card__body { grid-column: 1; grid-row: auto; }
+  .experience-card__logo, .experience-card__header, .experience-card__body { grid-column: 1; grid-row: auto; }
+  .experience-card__logo { width: min(100%, 240px); height: auto; margin-bottom: 1rem; }
+  .experience-card__mark { min-height: 0; margin-bottom: 1rem; }
+  #section-resume-awards .flex.flex-col.gap-6 > .w-full,
+  #section-resume-awards .flex.flex-col.gap-6 > .w-full:nth-child(odd):last-child { grid-template-columns: 1fr; gap: 0.35rem; }
+  #section-resume-awards h5 + div { margin-left: 2.45rem !important; text-align: left; }
+  #section-resume-languages .grid,
+  #section-resume-skills .grid { grid-template-columns: 1fr !important; }
+  #section-resume-languages > .max-w-prose > .flex.items-center { grid-template-columns: 1fr; }
+  #section-resume-languages > .max-w-prose > .flex.items-center > .flex.flex-col:not(:last-child) { margin-right: 0; border-right: 0; border-bottom: 1px solid rgb(226 232 240); }
+  #section-resume-languages .flex.flex-col.items-center:not(:last-child) { margin-right: 0; border-right: 0; border-bottom: 1px solid rgb(226 232 240); }
+}
+
+/* Keep the two-column shell exclusive to the homepage. */
+@media (min-width: 1100px) {
+  .page-body:not(:has(> #section-resume-biography)) {
+    display: block !important;
+    width: 100% !important;
+    max-width: none !important;
+    margin: 0 !important;
+    padding-top: 0 !important;
+  }
+
+  .page-body:not(:has(> #section-resume-biography)) > section {
+    grid-column: auto !important;
+    width: 100%;
+  }
+}
+
+/* True viewport-centered desktop navigation. */
+@media (min-width: 1024px) {
+  #site-header .navbar {
+    display: grid !important;
+    grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
+    align-items: center;
+    width: 100%;
+  }
+
+  #site-header .navbar > div:first-child {
+    grid-column: 1;
+    grid-row: 1;
+    justify-self: start;
+  }
+
+  #site-header #nav-menu {
+    grid-column: 2;
+    grid-row: 1;
+    justify-self: center;
+  }
+
+  #site-header #nav-menu + div {
+    grid-column: 3;
+    grid-row: 1;
+    justify-self: end;
+    margin-left: 0 !important;
+  }
+}
+
 /* Language */
 
 /* 英语（Languages 里的第 2 个圆环） */
 #section-resume-languages .flex.flex-col.items-center:nth-of-type(2) svg circle.text-primary-600,
 #section-resume-languages .flex.flex-col.items-center:nth-of-type(2) svg circle.dark\:text-primary-300 {
-  stroke: #00b6cc !important; 
+  stroke: #8b4bc1 !important; 
 }
 /* 中文（Languages 里的第 1 个圆环） */
 #section-resume-languages .flex.flex-col.items-center:nth-of-type(1) svg circle.text-primary-600,
 #section-resume-languages .flex.flex-col.items-center:nth-of-type(1) svg circle.dark\:text-primary-300 {
-  stroke: #0082ff!important; 
+  stroke: #6510ad!important; 
 }
 /* 德语（Languages 里的第 3 个圆环） */
 #section-resume-languages .flex.flex-col.items-center:nth-of-type(3) svg circle.text-primary-600,
 #section-resume-languages .flex.flex-col.items-center:nth-of-type(3) svg circle.dark\:text-primary-300 {
-  stroke: #00cba0 !important; 
+  stroke: #a775d0 !important; 
 }
 
 
@@ -492,7 +2532,7 @@ section#section-resume-experience p + figure {
 
 /* 右侧 Hobbies 进度条颜色： */
 #section-resume-skills .grid > div:last-child .skills-percent {
-    background-color: #00b6cc !important; /*  */
+    background-color: #8b4bc1 !important; /*  */
     background-image: none !important;
 }
 
@@ -715,7 +2755,7 @@ section:has(.academic-subsection) .max-w-prose {
 
 section:has(.academic-subsection) .mb-6.text-3xl {
   margin-bottom: 1rem;
-  background: linear-gradient(110deg, #006fd6 5%, #008fa3 48%, #00b69f 95%);
+  background: linear-gradient(110deg, #6510ad 5%, #7431b8 48%, #9559cc 95%);
   background-clip: text;
   color: transparent !important;
   font-size: clamp(2.6rem, 5vw, 4.5rem) !important;
@@ -723,14 +2763,14 @@ section:has(.academic-subsection) .mb-6.text-3xl {
   letter-spacing: -0.035em;
   line-height: 1.05;
   text-align: center;
-  text-shadow: 0 12px 32px rgb(0 143 163 / 0.12);
+  text-shadow: 0 12px 32px rgb(116 49 184 / 0.12);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .dark section:has(.academic-subsection) .mb-6.text-3xl {
-  background-image: linear-gradient(110deg, #62b6ff 5%, #67e8f9 48%, #5eead4 95%);
-  text-shadow: 0 12px 36px rgb(34 211 238 / 0.16);
+  background-image: linear-gradient(110deg, #c9aaed 5%, #d7bdf0 48%, #dfc9f2 95%);
+  text-shadow: 0 12px 36px rgb(193 159 222 / 0.16);
 }
 
 .academic-subsection {
@@ -761,7 +2801,7 @@ section:has(.academic-subsection) .mb-6.text-3xl {
 .academic-page-intro .academic-eyebrow {
   display: inline-block;
   margin-bottom: 1rem;
-  color: #007f8f;
+  color: #6510ad;
   font-size: 0.75rem;
   font-weight: 700;
   letter-spacing: 0.18em;
@@ -787,7 +2827,7 @@ section:has(.academic-subsection) .mb-6.text-3xl {
   overflow: hidden;
   border: 1px solid rgb(203 213 225 / 0.75);
   border-radius: 1.25rem;
-  background: linear-gradient(135deg, rgb(255 255 255 / 0.96), rgb(240 249 250 / 0.72));
+  background: linear-gradient(135deg, rgb(255 255 255 / 0.96), rgb(249 247 251 / 0.72));
   box-shadow: 0 18px 50px rgb(15 23 42 / 0.07);
 }
 
@@ -797,7 +2837,7 @@ section:has(.academic-subsection) .mb-6.text-3xl {
   bottom: -4rem;
   width: 11rem;
   height: 11rem;
-  border: 1px solid rgb(0 182 204 / 0.18);
+  border: 1px solid rgb(139 75 193 / 0.18);
   border-radius: 999px;
   content: "";
 }
@@ -828,7 +2868,7 @@ section:has(.academic-subsection) .mb-6.text-3xl {
 }
 
 .academic-entry-marker {
-  color: rgb(0 130 255 / 0.28);
+  color: rgb(101 16 173 / 0.28);
   font-size: 3rem;
   line-height: 1;
 }
@@ -869,14 +2909,14 @@ section:has(.academic-subsection) .mb-6.text-3xl {
   gap: 0.55rem;
   margin-top: 1.25rem;
   padding: 0.35rem 0;
-  color: #007f8f;
+  color: #6510ad;
   font-size: 1.25rem;
   font-weight: 750;
   text-decoration: none;
 }
 
 .academic-link:hover {
-  color: #005f6b;
+  color: #4b0c77;
   text-decoration: underline;
   text-underline-offset: 0.25rem;
 }
@@ -920,7 +2960,7 @@ section:has(.academic-subsection) .mb-6.text-3xl {
 
 .dark .academic-entry {
   border-color: rgb(71 85 105 / 0.7);
-  background: linear-gradient(135deg, rgb(15 23 42 / 0.96), rgb(8 47 54 / 0.72));
+  background: linear-gradient(135deg, rgb(15 23 42 / 0.96), rgb(36 24 48 / 0.72));
   box-shadow: 0 18px 50px rgb(0 0 0 / 0.25);
 }
 
@@ -933,7 +2973,7 @@ section:has(.academic-subsection) .mb-6.text-3xl {
 }
 
 .dark .academic-link {
-  color: rgb(103 232 249);
+  color: rgb(215 189 240);
 }
 
 .dark .academic-subheading {
@@ -962,4 +3002,1124 @@ section:has(.academic-subsection) .mb-6.text-3xl {
   .academic-conference-image img {
     height: auto;
   }
+}
+
+/* Research experience: image-led cards, isolated from the legacy row layout. */
+.page-body .experience-grid.research-gallery {
+  scroll-margin-top: 110px;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  gap: 1.5rem !important;
+  border: 0;
+}
+
+.research-gallery .research-entry {
+  min-width: 0;
+  overflow: hidden;
+  border: 1px solid #e5dfea;
+  border-radius: 12px;
+  background: #fff;
+}
+
+.research-gallery .research-entry--apex { order: -1; }
+
+.research-gallery .research-entry__image {
+  display: flex;
+  height: 220px !important;
+  margin: 0;
+  padding: 8px 12px;
+  border-bottom: 1px solid #eeebf3;
+  background: #fbfafc;
+  align-items: center;
+  justify-content: center;
+}
+
+.research-gallery .research-entry__image img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  object-fit: contain;
+  border-radius: 0;
+}
+
+.research-gallery .research-entry--apex .research-entry__image { background: #171c2b; }
+.research-gallery .research-entry--tsinghua .research-entry__image {
+  padding: 8px 12px;
+  background: #f3f0fa;
+}
+.research-gallery .research-entry--wict .research-entry__image {
+  padding: 8px 12px;
+  background: #fff7f5;
+}
+.research-gallery .research-entry--meiya .research-entry__image {
+  height: 220px !important;
+  padding: 8px 12px;
+}
+.research-gallery .research-entry--meiya .research-entry__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 0.35rem;
+}
+
+.research-gallery .research-entry__header {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  margin: 0;
+  padding: 1.25rem 1.4rem 0;
+}
+
+.research-gallery .research-entry__header time {
+  order: -1;
+  color: #64748b;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.025em;
+}
+
+.research-gallery .research-entry__header h3 {
+  margin: 0;
+  color: #162033;
+  font-size: 1.15rem;
+  line-height: 1.3;
+  font-weight: 750;
+}
+
+.research-gallery .research-entry__header p {
+  margin: 0.35rem 0 0;
+  color: #6510ad;
+  font-size: 0.84rem;
+  line-height: 1.5;
+  font-weight: 650;
+}
+
+.research-gallery .research-entry__summary {
+  padding: 0.85rem 1.4rem 1.4rem;
+  color: #526075;
+  font-size: 0.86rem;
+  line-height: 1.7;
+}
+
+.research-gallery .research-entry__summary p { margin: 0; }
+.research-gallery .research-entry__summary strong { color: #28364b; font-weight: 650; }
+.dark .research-gallery .research-entry { background: #111c2d; border-color: #334155; }
+.dark .research-gallery .research-entry__header h3,
+.dark .research-gallery .research-entry__summary strong { color: #e2e8f0; }
+.dark .research-gallery .research-entry__summary { color: #b6c3d4; }
+.dark .research-gallery .research-entry__header p { color: #c9a5e5; }
+
+@media (max-width: 760px) {
+  .page-body .experience-grid.research-gallery { grid-template-columns: 1fr !important; }
+  .research-gallery .research-entry__image,
+  .research-gallery .research-entry--meiya .research-entry__image { height: 210px !important; }
+}
+
+/* Homepage academic two-column shell */
+@media (min-width: 1100px) {
+  .page-body {
+    display: grid;
+    grid-template-columns: minmax(285px, 330px) minmax(0, 1fr);
+    column-gap: clamp(3rem, 5vw, 5.75rem);
+    align-items: start;
+    width: min(1480px, calc(100vw - 5rem));
+    margin: 0 auto;
+    padding-top: 4.5rem;
+  }
+
+  .page-body > section {
+    grid-column: 2;
+    min-width: 0;
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+  }
+
+  .page-body > #section-resume-biography {
+    grid-column: 1;
+    grid-row: 1 / span 20;
+    align-self: stretch;
+    min-width: 0;
+    padding: 0 !important;
+  }
+
+  #section-resume-biography > .w-full,
+  #section-resume-biography > div:not(#profile):not(.home-section-bg) {
+    display: none !important;
+  }
+
+  #section-resume-biography #profile {
+    position: sticky;
+    top: 7.25rem;
+    width: 100%;
+    padding: 2rem 1.55rem 1.6rem;
+    border: 1px solid rgb(203 213 225 / 0.82);
+    border-radius: 1.4rem;
+    background:
+      radial-gradient(circle at 88% 4%, rgb(167 117 208 / 0.12), transparent 31%),
+      linear-gradient(150deg, rgb(255 255 255 / 0.98), rgb(249 247 251 / 0.82));
+    box-shadow: 0 18px 55px rgb(15 23 42 / 0.08);
+  }
+
+  #section-resume-biography #profile::before {
+    position: absolute;
+    top: 0;
+    right: 1.6rem;
+    left: 1.6rem;
+    height: 4px;
+    border-radius: 0 0 999px 999px;
+    background: linear-gradient(90deg, #6510ad, #8b4bc1 55%, #a775d0);
+    content: "";
+  }
+
+  #section-resume-biography .avatar-wrapper {
+    width: 176px !important;
+    height: 176px !important;
+    margin-top: 0 !important;
+  }
+
+  #section-resume-biography .avatar {
+    width: 176px !important;
+    height: 176px !important;
+    border: 4px solid rgb(255 255 255 / 0.9);
+    box-shadow: 0 14px 32px rgb(15 23 42 / 0.15);
+  }
+
+  #section-resume-biography h1.text-3xl {
+    margin-top: 1.45rem !important;
+    font-size: 2.25rem !important;
+  }
+
+  #section-resume-biography .network-icon {
+    margin-top: 0.9rem;
+  }
+
+  #section-resume-biography .pt-2.prose {
+    width: 100%;
+    padding-top: 0.7rem;
+  }
+
+  #section-resume-biography a[href="/uploads/JunHao_Wu.pdf"] {
+    margin-top: 1.1rem !important;
+    padding: 0.6rem 0.95rem !important;
+    font-size: 0.9rem !important;
+  }
+
+  #section-resume-biography a[href="/uploads/JunHao_Wu.pdf"] svg {
+    width: 1rem !important;
+    height: 1rem !important;
+  }
+
+  .page-body > section:has(.academic-about) {
+    padding-top: 0 !important;
+  }
+
+  .page-body > section:has(.academic-about) .max-w-prose,
+  .page-body > section:has(.academic-news) .max-w-prose,
+  .page-body > section:has(.selected-publications) .max-w-prose,
+  .page-body > section:has(.experience-grid) .max-w-prose,
+  .page-body > #section-resume-experience .max-w-prose,
+  .page-body > #section-resume-awards .max-w-prose {
+    width: 100%;
+    max-width: none !important;
+  }
+}
+
+.sidebar-profile-meta {
+  width: 100%;
+  margin-top: 0.35rem;
+  text-align: center;
+}
+
+.sidebar-profile-meta p {
+  margin: 0 !important;
+  color: rgb(71 85 105);
+  font-size: 0.9rem;
+  line-height: 1.55;
+}
+
+.sidebar-profile-meta p:first-child {
+  color: rgb(30 41 59);
+  font-weight: 750;
+}
+
+.sidebar-research-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  justify-content: center;
+  margin-top: 0.9rem;
+}
+
+.sidebar-research-tags span {
+  padding: 0.28rem 0.58rem;
+  border: 1px solid rgb(116 49 184 / 0.2);
+  border-radius: 999px;
+  background: rgb(139 75 193 / 0.07);
+  color: #6510ad;
+  font-size: 0.7rem;
+  font-weight: 750;
+  letter-spacing: 0.025em;
+}
+
+section:has(.academic-about) .max-w-prose {
+  width: min(1050px, calc(100vw - 3rem));
+  max-width: none !important;
+}
+
+section:has(.academic-about) > .flex > .mb-6 {
+  margin-bottom: 1.35rem;
+  font-size: clamp(2.2rem, 4vw, 3.15rem) !important;
+  letter-spacing: -0.04em;
+}
+
+.academic-about {
+  position: relative;
+  padding-left: 1.4rem;
+  border-left: 4px solid transparent;
+  border-image: linear-gradient(180deg, #6510ad, #8b4bc1, #a775d0) 1;
+}
+
+.academic-about p {
+  margin: 0 !important;
+  color: rgb(51 65 85);
+  font-size: 1.03rem;
+  line-height: 1.82;
+}
+
+.academic-about p + p {
+  margin-top: 1rem !important;
+}
+
+.academic-about strong {
+  color: rgb(15 23 42);
+  font-weight: 720;
+}
+
+.dark #section-resume-biography #profile {
+  border-color: rgb(71 85 105 / 0.72);
+  background:
+    radial-gradient(circle at 88% 4%, rgb(205 175 231 / 0.12), transparent 31%),
+    linear-gradient(150deg, rgb(15 23 42 / 0.98), rgb(36 24 48 / 0.82));
+  box-shadow: 0 20px 58px rgb(0 0 0 / 0.25);
+}
+
+.dark .sidebar-profile-meta p {
+  color: rgb(148 163 184);
+}
+
+.dark .sidebar-profile-meta p:first-child,
+.dark .academic-about strong {
+  color: rgb(248 250 252);
+}
+
+.dark .sidebar-research-tags span {
+  border-color: rgb(215 189 240 / 0.22);
+  background: rgb(215 189 240 / 0.08);
+  color: rgb(215 189 240);
+}
+
+.dark .academic-about p {
+  color: rgb(203 213 225);
+}
+
+@media (max-width: 1099px) {
+  #section-resume-biography .h-2\/4.sm\:h-64 {
+    height: 280px !important;
+  }
+
+  #section-resume-biography .avatar-wrapper {
+    margin-top: -110px !important;
+  }
+
+  #section-resume-biography .sidebar-profile-meta {
+    max-width: 540px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  section:has(.academic-about) .max-w-prose {
+    width: min(100% - 2rem, 760px);
+  }
+}
+
+/* Refined academic homepage: quiet structure, color used as an accent. */
+#site-header .navbar > div:first-child {
+  display: flex;
+  align-items: center;
+  align-self: center;
+  height: auto;
+}
+
+#site-header .navbar-brand {
+  display: inline-flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  font-size: 1.45rem;
+  line-height: 1.2;
+  white-space: nowrap;
+}
+
+#site-header .nav-link {
+  font-size: 1.2rem;
+}
+
+@media (min-width: 1024px) {
+  #site-header .navbar {
+    min-height: 4.6rem;
+    width: 100%;
+    max-width: none;
+    margin-inline: 0;
+    padding-inline: clamp(1.25rem, 2vw, 2rem);
+    box-sizing: border-box;
+  }
+
+  #site-header .navbar-brand {
+    font-size: 1.65rem;
+    font-weight: 760;
+  }
+
+  #site-header .nav-link {
+    font-size: 1.55rem;
+    font-weight: 650;
+  }
+
+  #site-header [data-search-toggle] svg,
+  #site-header .theme-toggle svg {
+    width: 1.65rem;
+    height: 1.65rem;
+  }
+}
+
+@media (min-width: 1100px) {
+  .page-body {
+    grid-template-columns: minmax(220px, 260px) minmax(0, 880px);
+    column-gap: clamp(3.5rem, 6vw, 6rem);
+    justify-content: center;
+    width: min(1250px, calc(100vw - 5rem));
+    padding-top: 4rem;
+  }
+
+  #section-resume-biography #profile {
+    padding: 0;
+    border: 0;
+    border-radius: 0;
+    background: transparent;
+    box-shadow: none;
+  }
+
+  #section-resume-biography #profile::before {
+    display: none;
+  }
+
+  #section-resume-biography .avatar-wrapper,
+  #section-resume-biography .avatar {
+    width: 148px !important;
+    height: 148px !important;
+  }
+
+  #section-resume-biography .avatar {
+    border: 2px solid rgb(226 232 240);
+    box-shadow: 0 8px 22px rgb(15 23 42 / 0.12);
+  }
+
+  #section-resume-biography h1.text-3xl {
+    margin-top: 1.25rem !important;
+    font-size: 2rem !important;
+    letter-spacing: -0.045em;
+    text-shadow: none;
+  }
+
+  #section-resume-biography h1.text-3xl::after {
+    right: 25%;
+    left: 25%;
+    height: 2px;
+  }
+
+  #section-resume-biography .text-lg {
+    font-size: 0.88rem;
+  }
+
+  #section-resume-biography .network-icon {
+    margin-top: 0.65rem;
+  }
+
+  #section-resume-biography .network-icon svg,
+  #section-resume-biography .network-icon span {
+    height: 1.25rem !important;
+  }
+
+  #section-resume-biography a[href="/uploads/JunHao_Wu.pdf"] {
+    padding: 0.48rem 0.75rem !important;
+    border-color: rgb(203 213 225) !important;
+    background: transparent !important;
+    font-size: 0.82rem !important;
+    box-shadow: none !important;
+  }
+
+  .page-body > section:not(#section-resume-biography) {
+    padding-top: 2.7rem !important;
+    padding-bottom: 2.7rem !important;
+  }
+
+  .page-body > section:has(.academic-about) {
+    padding-top: 0 !important;
+  }
+}
+
+.sidebar-profile-meta p {
+  font-size: 0.82rem;
+}
+
+.sidebar-profile-meta p:first-child {
+  font-size: 0.88rem;
+}
+
+.sidebar-research-tags {
+  gap: 0.32rem;
+  margin-top: 0.75rem;
+}
+
+.sidebar-research-tags span {
+  padding: 0.22rem 0.48rem;
+  background: transparent;
+  font-size: 0.64rem;
+}
+
+section:has(.academic-about) > .flex > .mb-6,
+section:has(.academic-news) > .flex > .mb-6,
+section:has(.selected-publications) > .flex > .mb-6,
+section:has(.experience-grid) > .flex > .mb-6,
+.academic-list-section > .flex > .mb-6,
+#section-resume-awards > .flex > .mb-6 {
+  margin-bottom: 1.25rem;
+  font-size: clamp(1.8rem, 3vw, 2.35rem) !important;
+  font-weight: 760;
+  letter-spacing: -0.035em;
+  line-height: 1.15;
+  text-align: left;
+}
+
+section:has(.academic-about) > .flex,
+section:has(.academic-news) > .flex,
+section:has(.selected-publications) > .flex,
+section:has(.experience-grid) > .flex,
+.academic-list-section > .flex,
+#section-resume-awards > .flex {
+  align-items: stretch;
+}
+
+section:has(.academic-about) > .flex > .mb-6,
+section:has(.academic-news) > .flex > .mb-6,
+section:has(.selected-publications) > .flex > .mb-6,
+section:has(.experience-grid) > .flex > .mb-6,
+.academic-list-section > .flex > .mb-6,
+#section-resume-awards > .flex > .mb-6 {
+  align-self: flex-start;
+}
+
+.academic-about {
+  padding-left: 1.15rem;
+  border-left-width: 3px;
+}
+
+.academic-about p {
+  font-size: 0.98rem;
+  line-height: 1.78;
+}
+
+.academic-news {
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+}
+
+.academic-news::before {
+  display: none;
+}
+
+.academic-news__item {
+  grid-template-columns: 6.4rem minmax(0, 1fr);
+  gap: 1.25rem;
+  padding: 0.82rem 0;
+  border-bottom: 1px solid rgb(226 232 240 / 0.95);
+}
+
+.academic-news__item:first-child {
+  border-top: 1px solid rgb(226 232 240 / 0.95);
+}
+
+.academic-news__item + .academic-news__item {
+  border-top: 0;
+}
+
+.academic-news__item p {
+  font-size: 1.2rem;
+  line-height: 1.7;
+}
+
+.academic-news__item time {
+  font-size: 1rem;
+  letter-spacing: 0.025em;
+}
+
+section:has(.academic-news) > .flex > .mb-6 {
+  font-size: clamp(2.25rem, 3.8vw, 2.9rem) !important;
+}
+
+.selected-publications {
+  gap: 0;
+  border-top: 1px solid rgb(226 232 240);
+}
+
+.publication-card {
+  grid-template-columns: 190px minmax(0, 1fr);
+  min-height: 0;
+  padding: 1.4rem 0;
+  overflow: visible;
+  border: 0;
+  border-bottom: 1px solid rgb(226 232 240);
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+  transform: none;
+}
+
+.publication-card:hover {
+  border-color: rgb(139 75 193 / 0.45);
+  box-shadow: none;
+  transform: none;
+}
+
+.publication-card__visual {
+  min-height: 138px;
+  margin: 0;
+  padding: 1rem;
+  border-radius: 0.55rem;
+}
+
+.publication-card__visual::after {
+  right: -6rem;
+  bottom: -7rem;
+  opacity: 0.55;
+}
+
+.publication-card__visual-copy strong {
+  font-size: 1.65rem;
+  letter-spacing: -0.04em;
+}
+
+.publication-card__visual-copy small {
+  margin-top: 0.45rem;
+  font-size: 0.62rem;
+}
+
+.publication-card__content {
+  padding: 0.1rem 0 0.1rem 1.5rem;
+}
+
+.publication-card h3 {
+  font-size: clamp(1.12rem, 2vw, 1.38rem);
+  line-height: 1.28;
+}
+
+.publication-card__meta {
+  margin-bottom: 0.55rem;
+  font-size: 0.67rem;
+}
+
+.publication-card__status {
+  padding: 0.22rem 0.5rem;
+  background: transparent;
+}
+
+.publication-card__authors {
+  margin-top: 0.48rem !important;
+  font-size: 0.82rem;
+}
+
+.publication-card__summary {
+  margin-top: 0.5rem !important;
+  font-size: 0.86rem;
+  line-height: 1.58;
+}
+
+.publication-card__link {
+  margin-top: 0.62rem;
+  font-size: 0.82rem;
+}
+
+.selected-publications__more {
+  margin-top: 1rem !important;
+  text-align: left;
+}
+
+/* Match the Events archive link to the publication-list footer. */
+.selected-publications__more a,
+#academic-events a[href="/events/"] {
+  font-size: 1.2rem;
+  font-weight: 750;
+  line-height: 1.5;
+}
+
+#academic-events > .container:has(a[href="/events/"]) {
+  width: 100%;
+  max-width: none;
+  padding: 0;
+  margin: 0;
+}
+
+#academic-events > .container:has(a[href="/events/"]) > div {
+  justify-content: flex-start;
+  margin-top: 1rem;
+}
+
+#academic-events a[href="/events/"] {
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+  color: #6510ad;
+  text-decoration: none;
+  gap: 0.4em;
+}
+
+#academic-events a[href="/events/"]::after {
+  content: "→";
+}
+
+#academic-events a[href="/events/"]:hover {
+  color: #4b0c77;
+  text-decoration: underline;
+  text-underline-offset: 0.25rem;
+}
+
+.dark #academic-events a[href="/events/"] {
+  color: #c9a5e5;
+}
+
+.page-body > #academic-events {
+  padding-bottom: 0.75rem !important;
+}
+
+.page-body > #section-resume-awards {
+  padding-top: 1.5rem !important;
+}
+
+.experience-grid {
+  grid-template-columns: 1fr !important;
+  gap: 0 !important;
+  border-top: 1px solid rgb(226 232 240);
+}
+
+.experience-card {
+  display: grid !important;
+  grid-template-columns: 175px minmax(0, 1fr);
+  grid-template-rows: auto 1fr;
+  gap: 0 1.5rem;
+  padding: 1.5rem 0 !important;
+  overflow: visible !important;
+  border: 0 !important;
+  border-bottom: 1px solid rgb(226 232 240) !important;
+  border-radius: 0 !important;
+  background: transparent !important;
+  box-shadow: none !important;
+}
+
+.experience-card:hover {
+  box-shadow: none !important;
+  transform: none !important;
+}
+
+.experience-card__header {
+  grid-column: 2;
+  grid-row: 1;
+  gap: 0.75rem;
+  padding: 0 !important;
+}
+
+.experience-card__header h3 {
+  font-size: 1.15rem !important;
+}
+
+.experience-card__header p,
+.experience-card__header time {
+  font-size: 0.78rem !important;
+}
+
+.experience-card__media {
+  grid-column: 1;
+  grid-row: 1 / 3;
+  height: 125px !important;
+  min-height: 0 !important;
+  margin: 0 !important;
+  border: 1px solid rgb(226 232 240) !important;
+  border-radius: 0.55rem !important;
+  background: rgb(248 250 252) !important;
+}
+
+.experience-card__body {
+  grid-column: 2;
+  grid-row: 2;
+  padding: 0.7rem 0 0 !important;
+  font-size: 0.87rem !important;
+  line-height: 1.62 !important;
+}
+
+.dark .academic-news__item,
+.dark .academic-news__item:first-child,
+.dark .publication-card,
+.dark .selected-publications,
+.dark .experience-grid,
+.dark .experience-card {
+  border-color: rgb(51 65 85) !important;
+}
+
+.dark .publication-card,
+.dark .experience-card {
+  background: transparent !important;
+  box-shadow: none !important;
+}
+
+@media (max-width: 760px) {
+  .publication-card,
+  .experience-card {
+    grid-template-columns: 1fr;
+  }
+
+  .publication-card__visual {
+    min-height: 190px;
+  }
+
+  .publication-card__content {
+    padding: 1rem 0 0;
+  }
+
+  .experience-card__header,
+  .experience-card__media,
+  .experience-card__body {
+    grid-column: 1;
+    grid-row: auto;
+  }
+
+  .experience-card__media {
+    height: auto !important;
+    margin-top: 0.9rem !important;
+  }
+}
+
+/* Editorial academic layout: generous identity, figure-first papers, adaptive media. */
+@media (min-width: 1100px) {
+  .page-body {
+    grid-template-columns: minmax(285px, 310px) minmax(0, 920px);
+    column-gap: clamp(3.75rem, 5vw, 5.5rem);
+    width: min(1360px, calc(100vw - 5rem));
+  }
+
+  #section-resume-biography .avatar-wrapper,
+  #section-resume-biography .avatar {
+    width: 184px !important;
+    height: 184px !important;
+  }
+
+  #section-resume-biography h1.text-3xl {
+    margin-top: 1.35rem !important;
+    font-size: 2.25rem !important;
+  }
+
+  #section-resume-biography .text-lg {
+    font-size: 0.95rem;
+  }
+
+  #section-resume-biography .network-icon {
+    margin-top: 0.8rem;
+  }
+
+  #section-resume-biography .network-icon svg,
+  #section-resume-biography .network-icon span {
+    height: 1.4rem !important;
+  }
+
+  #section-resume-biography a[href="/uploads/JunHao_Wu.pdf"] {
+    padding: 0.58rem 0.9rem !important;
+    font-size: 0.88rem !important;
+  }
+}
+
+@media (min-width: 761px) {
+  .publication-card {
+    grid-template-columns: minmax(300px, 40%) minmax(0, 1fr);
+    gap: clamp(1.5rem, 3vw, 2.25rem);
+    align-items: center;
+    padding: 1.75rem 0;
+  }
+
+  .publication-card__visual {
+    width: 100%;
+    min-height: 0;
+    aspect-ratio: 16 / 9;
+    padding: 1.25rem 1.35rem;
+    border-radius: 0.7rem;
+  }
+
+  .publication-card__content {
+    padding: 0;
+  }
+
+  .publication-detail {
+    grid-template-columns: minmax(330px, 43%) minmax(0, 1fr);
+    gap: clamp(1.75rem, 3vw, 2.6rem);
+    align-items: center;
+  }
+
+  .publication-detail__visual {
+    min-height: 0;
+    aspect-ratio: 16 / 9;
+  }
+}
+
+.publication-card__visual img,
+.publication-detail__visual img {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.publication-card__visual-copy {
+  max-width: 88%;
+}
+
+.publication-card__visual-copy strong {
+  font-size: clamp(1.7rem, 3vw, 2.25rem);
+}
+
+.experience-card {
+  grid-template-columns: 210px minmax(0, 1fr);
+  column-gap: 1.9rem;
+  padding: 1.8rem 0 !important;
+}
+
+.experience-card__media {
+  display: flex;
+  height: 118px !important;
+  padding: 0 !important;
+  overflow: hidden;
+  border: 0 !important;
+  border-radius: 0.65rem !important;
+  background: transparent !important;
+  align-items: center;
+  justify-content: center;
+}
+
+.experience-card__media img {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.experience-card--meiya .experience-card__media {
+  background: rgb(241 245 249) !important;
+}
+
+.experience-card--meiya .experience-card__media img {
+  width: 100%;
+  height: 100%;
+  max-height: none;
+  object-fit: cover;
+}
+
+.experience-card__header {
+  align-items: flex-start;
+}
+
+@media (max-width: 760px) {
+  .publication-card__visual,
+  .publication-detail__visual {
+    width: 100%;
+    min-height: 0;
+    aspect-ratio: 16 / 9;
+  }
+
+  .experience-card__media {
+    width: min(100%, 360px);
+    height: 120px !important;
+  }
+}
+
+/* Tsinghua website-inspired interface: vivid purple, deep purple and neutral surfaces.
+   Scientific figures, photographs and institutional logos keep their own colors. */
+:root {
+  --academic-purple: #6510ad;
+  --academic-purple-hover: #4b0c77;
+  --academic-orchid: #8b4bc1;
+  --academic-highlight: #8b4bc1;
+  --academic-line: #e5dfea;
+  --color-primary-500: #6510ad;
+  --color-primary-600: #6510ad;
+  --color-primary-700: #4b0c77;
+  --color-header-bg: #faf6fb;
+  --color-header-fg: #251b2e;
+}
+.dark {
+  --academic-purple: #c9a5e5;
+  --academic-purple-hover: #e5d4f5;
+  --academic-line: #43334f;
+  --color-primary-500: #c19fde;
+  --color-primary-600: #c9a5e5;
+  --color-primary-700: #e5d4f5;
+  --color-header-bg: #201827;
+  --color-header-fg: #f1e8f5;
+}
+#site-header.header {
+  background: linear-gradient(110deg, #faf6fb 0%, #f3eaf7 55%, #fcf4f8 100%);
+  border-bottom: 1px solid var(--academic-line);
+  box-shadow: 0 2px 12px rgb(101 16 173 / 0.045);
+}
+.dark #site-header.header {
+  background: linear-gradient(110deg, #201827, #281b35 55%, #241c30);
+}
+#site-header .nav-link,
+#site-header .navbar-brand,
+#site-header [data-search-toggle],
+#site-header .theme-toggle {
+  color: var(--color-header-fg);
+}
+#site-header .nav-link.active,
+#site-header .nav-link:hover,
+#site-header .navbar-brand:hover {
+  color: var(--academic-purple);
+}
+#site-header .nav-link.active {
+  text-decoration: underline;
+  text-decoration-color: var(--academic-orchid);
+  text-underline-offset: 0.45em;
+  text-decoration-thickness: 2px;
+}
+#site-header a:focus-visible,
+#site-header button:focus-visible {
+  outline: 2px solid var(--academic-purple);
+  outline-offset: 4px;
+}
+::selection {
+  background: rgb(139 75 193 / 0.22);
+}
+a:focus-visible, button:focus-visible {
+  outline-color: var(--academic-purple);
+}
+.publication-card__status {
+  color: var(--academic-purple);
+  border-color: var(--academic-line);
+  background: linear-gradient(120deg, rgb(139 75 193 / 0.06), rgb(167 117 208 / 0.07));
+}
+#section-resume-awards h5 svg {
+  color: var(--academic-purple);
+}
+
+/* Shared resource links: readable labels and full-size, aligned icons. */
+.publication-card__links,
+.publication-detail__links,
+#academic-projects .academic-entry__links {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5rem 1.25rem;
+  margin-top: 1rem;
+}
+.publication-card__links a.publication-card__link,
+.publication-detail__links a,
+#academic-projects .academic-entry__links a {
+  display: inline-flex !important;
+  align-items: center;
+  gap: 0.45rem !important;
+  min-height: 36px;
+  margin: 0 !important;
+  padding: 0.2rem 0;
+  color: var(--academic-purple);
+  font-size: 1.05rem !important;
+  font-weight: 650;
+  line-height: 1.4;
+  text-decoration: none;
+  white-space: nowrap;
+}
+.publication-card__links a:hover,
+.publication-detail__links a:hover,
+#academic-projects .academic-entry__links a:hover {
+  color: var(--academic-purple-hover);
+  text-decoration: underline;
+  text-underline-offset: 0.25em;
+}
+#academic-projects .academic-entry__links .academic-entry__icon {
+  width: 23px !important;
+  height: 23px !important;
+  flex: 0 0 23px;
+}
+.publication-card__links a > span[aria-hidden],
+.publication-detail__links a > span[aria-hidden] {
+  display: none;
+}
+.publication-card__links a::before,
+.publication-detail__links a::before {
+  content: '';
+  display: block;
+  width: 23px;
+  height: 23px;
+  flex: 0 0 23px;
+  background-color: currentColor;
+  mask: var(--resource-icon) center / contain no-repeat;
+  -webkit-mask: var(--resource-icon) center / contain no-repeat;
+  --resource-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='1.7'%3E%3Ccircle cx='12' cy='12' r='9'/%3E%3Cellipse cx='12' cy='12' rx='4' ry='9'/%3E%3Cpath d='M3 12h18M5 6.5h14M5 17.5h14'/%3E%3C/svg%3E");
+}
+.publication-card__links a[href*='arxiv.org']::before,
+.publication-detail__links a[href*='arxiv.org']::before {
+  --resource-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='1.7' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M5 3h9l5 5v13H5zM14 3v5h5M8 12h8M8 16h6'/%3E%3C/svg%3E");
+}
+.publication-card__links a[href*='github.com']::before,
+.publication-detail__links a[href*='github.com']::before {
+  --resource-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M12 2a10 10 0 0 0-3.16 19.49c.5.09.68-.22.68-.48v-1.86c-2.78.61-3.37-1.18-3.37-1.18-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.61.07-.61 1 .07 1.53 1.03 1.53 1.03.89 1.53 2.34 1.09 2.91.83.09-.65.35-1.09.64-1.34-2.22-.25-4.56-1.11-4.56-4.94 0-1.09.39-1.99 1.03-2.69-.1-.25-.45-1.27.1-2.65 0 0 .84-.27 2.75 1.03A9.6 9.6 0 0 1 12 6.82c.85 0 1.71.11 2.51.34 1.91-1.3 2.75-1.03 2.75-1.03.55 1.38.2 2.4.1 2.65.64.7 1.03 1.6 1.03 2.69 0 3.84-2.34 4.69-4.57 4.94.36.31.68.92.68 1.85v2.75c0 .27.18.58.69.48A10 10 0 0 0 12 2Z'/%3E%3C/svg%3E");
+}
+.publication-card__links a[href*='huggingface.co']::before,
+.publication-detail__links a[href*='huggingface.co']::before {
+  content: '\1F917';
+  background: none;
+  mask: none;
+  -webkit-mask: none;
+  font-family: 'Segoe UI Emoji', 'Apple Color Emoji', sans-serif;
+  font-size: 23px;
+  line-height: 23px;
+}
+
+/* Keep the four publication resources together, including on narrow screens. */
+.publication-card__links,
+.publication-detail__links {
+  flex-wrap: nowrap;
+  gap: 0.7rem;
+  max-width: 100%;
+  overflow-x: auto;
+  padding-block: 0.15rem;
+}
+.publication-card__links a.publication-card__link,
+.publication-detail__links a {
+  flex: 0 0 auto;
+  gap: 0.3rem !important;
+  font-size: 0.95rem !important;
+}
+.publication-card__links a::before,
+.publication-detail__links a::before {
+  width: 20px;
+  height: 20px;
+  flex-basis: 20px;
+  font-size: 20px;
+  line-height: 20px;
+}
+.publication-card__links a[href*='huggingface.co']::before,
+.publication-detail__links a[href*='huggingface.co']::before {
+  font-size: 20px;
+  line-height: 20px;
 }
